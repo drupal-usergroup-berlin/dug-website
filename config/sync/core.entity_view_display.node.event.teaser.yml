@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.body
+    - field.field.node.event.comment
     - field.field.node.event.field_date
     - field.field.node.event.field_location
     - field.field.node.event.field_minutes
@@ -12,6 +13,7 @@ dependencies:
     - field.field.node.event.field_talks
     - node.type.event
   module:
+    - datetime
     - text
     - user
 id: node.event.teaser
@@ -22,14 +24,24 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
+  field_date:
+    type: datetime_default
+    weight: 2
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  field_date: true
+  comment: true
   field_location: true
   field_minutes: true
   field_summary: true
