@@ -5,6 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.body
+    - field.field.node.event.field_date
+    - field.field.node.event.field_location
+    - field.field.node.event.field_minutes
+    - field.field.node.event.field_summary
+    - field.field.node.event.field_talks
     - node.type.event
   module:
     - text
@@ -24,4 +29,9 @@ content:
   links:
     weight: 100
 hidden:
+  field_date: true
+  field_location: true
+  field_minutes: true
+  field_summary: true
+  field_talks: true
   langcode: true

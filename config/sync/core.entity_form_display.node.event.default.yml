@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_location
     - field.field.node.event.field_minutes
+    - field.field.node.event.field_summary
     - field.field.node.event.field_talks
     - node.type.event
   module:
@@ -45,6 +46,13 @@ content:
     type: address_default
   field_minutes:
     weight: 34
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_summary:
+    weight: 36
     settings:
       rows: 5
       placeholder: ''
