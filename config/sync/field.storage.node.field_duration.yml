@@ -1,0 +1,36 @@
+uuid: a36fb040-2507-47e2-8b2f-47cd168afa9e
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_duration
+field_name: field_duration
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '10'
+      label: '10 minutes'
+    -
+      value: '15'
+      label: '15 minutes'
+    -
+      value: '20'
+      label: '20 minutes'
+    -
+      value: '30'
+      label: '30 minutes'
+    -
+      value: '40'
+      label: '40 minutes'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

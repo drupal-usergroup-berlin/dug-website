@@ -4,8 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.talk.body
+    - field.field.node.talk.field_difficulty
+    - field.field.node.talk.field_done
+    - field.field.node.talk.field_duration
+    - field.field.node.talk.field_topics
+    - field.field.node.talk.field_type
     - node.type.talk
   module:
+    - options
     - text
     - user
 id: node.talk.default
@@ -19,6 +25,40 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  field_difficulty:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_done:
+    weight: 102
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_duration:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_topics:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_type:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
   links:
     weight: 100
 hidden:

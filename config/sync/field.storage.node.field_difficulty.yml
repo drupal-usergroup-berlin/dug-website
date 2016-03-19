@@ -1,0 +1,27 @@
+uuid: 81b3ddbb-43d4-495e-b113-191016814574
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_difficulty
+field_name: field_difficulty
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: beginner
+      label: Einsteiger
+    -
+      value: advanced
+      label: Fortgeschrittene
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

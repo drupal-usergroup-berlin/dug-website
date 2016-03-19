@@ -1,0 +1,21 @@
+uuid: 1c8cd0c7-e13a-4cb1-bf08-8bacd4fa5a6b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.talk
+  module:
+    - options
+id: node.talk.field_type
+field_name: field_type
+entity_type: node
+bundle: talk
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

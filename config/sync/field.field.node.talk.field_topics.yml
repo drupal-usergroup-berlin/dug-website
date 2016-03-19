@@ -1,0 +1,27 @@
+uuid: 96560282-1e44-4e54-aa5e-949faefa6471
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.talk
+    - taxonomy.vocabulary.tags
+id: node.talk.field_topics
+field_name: field_topics
+entity_type: node
+bundle: talk
+label: Themen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

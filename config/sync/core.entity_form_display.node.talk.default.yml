@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.talk.body
+    - field.field.node.talk.field_difficulty
+    - field.field.node.talk.field_done
+    - field.field.node.talk.field_duration
+    - field.field.node.talk.field_topics
+    - field.field.node.talk.field_type
     - node.type.talk
   module:
     - path
@@ -26,6 +31,35 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_difficulty:
+    weight: 35
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_done:
+    weight: 32
+    settings:
+      display_label: false
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_duration:
+    weight: 34
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_topics:
+    weight: 36
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_type:
+    weight: 33
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   langcode:
     type: language_select
     weight: 2
