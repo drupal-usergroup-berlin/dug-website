@@ -46,4 +46,3 @@ template: d6_node
 migration_dependencies:
   required:
     - d6_user
-    - d6_node_type
