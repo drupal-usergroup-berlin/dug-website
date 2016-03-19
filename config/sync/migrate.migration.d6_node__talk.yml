@@ -43,7 +43,12 @@ process:
     plugin: iterator
     source: field_difficulty
     process:
-      value: value
+      value:
+        plugin: static_map
+        source: value
+        map:
+          easy: beginner
+          hard: advanced
   field_duration:
     plugin: iterator
     source: field_duration
@@ -51,12 +56,12 @@ process:
       value: value
   field_type:
     plugin: iterator
-    source: field_talk_type
+    source: field_session_type
     process:
       value: value
   field_done:
     plugin: iterator
-    source: field_talk_done
+    source: field_session_done
     process:
       value:
         plugin: static_map
