@@ -1,0 +1,14 @@
+uuid: ab2960e9-031d-4b44-a709-9add01a9cb2a
+name: 'Drupal Berlin'
+mail: info@drupalberlin.de
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: de
+default_langcode: de
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
