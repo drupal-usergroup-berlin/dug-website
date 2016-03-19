@@ -75,10 +75,3 @@ template: d6_node
 migration_dependencies:
   required:
     - d6_user
-    - d6_node_type
-    - d6_node_settings
-    - d6_filter_format
-  optional:
-    - d6_field_instance_widget_settings
-    - d6_field_formatter_settings
-    - d6_upload_field_instance
