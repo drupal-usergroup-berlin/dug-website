@@ -1,0 +1,22 @@
+uuid: da8bfaf0-5199-4e4e-ad04-4e5440236ed4
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - icke
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: icke_content
+theme: icke
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: Haupt-Seiteninhalt
+  provider: system
+  label_display: '0'
+visibility: {  }

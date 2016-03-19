@@ -1,0 +1,68 @@
+uuid: 76d8c601-65b3-460e-8020-32ba2d9cbd59
+langcode: de
+status: true
+dependencies:
+  config:
+    - migrate.migration.d6_user
+  module:
+    - node
+id: d6_user__profile
+migration_tags:
+  - 'Drupal 6'
+label: 'Content profile to user profile'
+source:
+  plugin: d6_content_profile
+  database_state_key: migrate_upgrade_6
+  node_type: profile
+process:
+  uid: node_uid
+  field_drupal_org: field_drupal_org
+  field_facebook:
+    plugin: iterator
+    source: field_facebook
+    process:
+      value: value
+  field_first_name:
+    plugin: iterator
+    source: field_first_name
+    process:
+      value: value
+  field_job_status:
+    plugin: iterator
+    source: field_job_status
+    process:
+      value: value
+  field_last_name:
+    plugin: iterator
+    source: field_last_name
+    process:
+      value: value
+  field_twitter:
+    plugin: iterator
+    source: field_twitter
+    process:
+      value: value
+  field_xing:
+    plugin: iterator
+    source: field_xing
+    process:
+      value: value
+  field_comment_notification: field_comment_notification
+  field_event_notification:
+    plugin: iterator
+    source: field_event_notification
+    process:
+      value:
+        plugin: static_map
+        source: value
+        default_value: 0
+        map:
+          '1 ': 1
+  user_picture/traget_id: field_photo/0/fid
+destination:
+  plugin: 'entity:user'
+template: d6_node
+migration_dependencies:
+  required:
+    - d6_user
+    - d6_file

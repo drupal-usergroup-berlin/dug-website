@@ -1,0 +1,26 @@
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: 65em,
+  container-position: center,
+  columns: 12,
+  gutters: .25,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: show-columns,
+    color: rgba(#66f, .25),
+    output: overlay,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: false,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);

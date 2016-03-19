@@ -1,0 +1,22 @@
+uuid: 1287b523-585f-462a-a200-ec6ba13d29ca
+langcode: de
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - icke
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: icke_help
+theme: icke
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Hilfe
+  provider: help
+  label_display: '0'
+visibility: {  }

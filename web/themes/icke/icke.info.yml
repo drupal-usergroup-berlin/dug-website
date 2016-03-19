@@ -1,0 +1,17 @@
+name: Icke
+type: theme
+description: 'Default DUG theme'
+version: 8.x-1.0
+core: 8.x
+base theme: classy
+
+screenshot: screenshot.png
+
+libraries:
+  - icke/base
+  - icke/admin
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer
