@@ -13,3 +13,4 @@ web/sites/default/files
 .idea
 
 web/sites/default/settings.local.php
+config/migrate
