@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.comment
     - field.field.node.event.field_date
     - field.field.node.event.field_location
     - field.field.node.event.field_minutes
@@ -12,6 +13,7 @@ dependencies:
     - node.type.event
   module:
     - address
+    - comment
     - datetime
     - text
     - user
@@ -26,6 +28,13 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+  comment:
+    weight: 7
+    label: above
+    settings:
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
   field_date:
     weight: 3
     label: above
