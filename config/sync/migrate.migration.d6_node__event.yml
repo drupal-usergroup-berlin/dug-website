@@ -39,7 +39,11 @@ process:
   field_date: field_date
   field_location_reference: field_location_reference
   field_log_reference: field_log_reference
-  field_sessions_reference: field_sessions_reference
+  field_talks:
+    plugin: iterator
+    source: field_sessions_reference
+    process:
+      target_id: nid
 destination:
   plugin: 'entity:node'
 template: d6_node
