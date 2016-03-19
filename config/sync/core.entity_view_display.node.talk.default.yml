@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.talk.body
+    - field.field.node.talk.comment
     - field.field.node.talk.field_difficulty
     - field.field.node.talk.field_done
     - field.field.node.talk.field_duration
@@ -11,6 +12,7 @@ dependencies:
     - field.field.node.talk.field_type
     - node.type.talk
   module:
+    - comment
     - options
     - text
     - user
@@ -25,6 +27,13 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  comment:
+    weight: 107
+    label: above
+    settings:
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
   field_difficulty:
     weight: 105
     label: above
