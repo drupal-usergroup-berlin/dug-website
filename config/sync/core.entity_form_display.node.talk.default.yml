@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.talk.body
+    - field.field.node.talk.comment
     - field.field.node.talk.field_difficulty
     - field.field.node.talk.field_done
     - field.field.node.talk.field_duration
@@ -11,6 +12,7 @@ dependencies:
     - field.field.node.talk.field_type
     - node.type.talk
   module:
+    - comment
     - path
     - text
 id: node.talk.default
@@ -26,6 +28,11 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+  comment:
+    weight: 37
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
   created:
     type: datetime_timestamp
     weight: 10
