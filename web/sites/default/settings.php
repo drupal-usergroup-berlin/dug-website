@@ -705,7 +705,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  */
 
 
-$settings['install_profile'] = 'standard';
+$settings['install_profile'] = 'minimal';
 $config_directories['sync'] = '../config/sync';
 
 /**
