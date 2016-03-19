@@ -32,7 +32,14 @@ process:
   body/format:
     plugin: default_value
     default_value: full_html
-  body/value: field_bodytext/0/value
+  body/value:
+    -
+      plugin: callback
+      callable: _filter_autop
+      source: field_bodytext/0/value
+    -
+      plugin: callback
+      callable: "\Drupal\dug_migrate\MigrationHelper::convertUrlToLink"
   revision_uid: revision_uid
   revision_log: log
   revision_timestamp: timestamp
