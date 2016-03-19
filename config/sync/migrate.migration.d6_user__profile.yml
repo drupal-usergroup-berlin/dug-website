@@ -58,9 +58,11 @@ process:
         default_value: 0
         map:
           '1 ': 1
+  user_picture/traget_id: field_photo/0/fid
 destination:
   plugin: 'entity:user'
 template: d6_node
 migration_dependencies:
   required:
     - d6_user
+    - d6_file
