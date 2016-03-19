@@ -1,0 +1,19 @@
+uuid: 0c8b1866-6949-4d5c-8758-8856a8f247d7
+langcode: en
+status: true
+dependencies: {  }
+countryCode: LI
+format: "%organization\n%recipient\n%addressLine1\n%addressLine2\n%postalCode %locality"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+  - postalCode
+uppercaseFields:
+  - locality
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '(948[5-9])|(949[0-7])'
+postalCodePrefix: FL-

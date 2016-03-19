@@ -1,0 +1,26 @@
+uuid: 428f1d8d-ee69-4af5-a800-ed9313d7e82a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_talks
+    - node.type.event
+    - node.type.talk
+id: node.event.field_talks
+field_name: field_talks
+entity_type: node
+bundle: event
+label: Talks
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      talk: talk
+    sort:
+      field: _none
+field_type: entity_reference

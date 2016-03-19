@@ -1,0 +1,19 @@
+uuid: 3cb728b9-2541-4285-b556-863fbbbc006e
+langcode: en
+status: true
+dependencies: {  }
+countryCode: NF
+format: "%organization\n%recipient\n%addressLine1\n%addressLine2\n%locality %administrativeArea %postalCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+  - administrativeArea
+administrativeAreaType: province
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '2899'
+postalCodePrefix: null

@@ -1,0 +1,21 @@
+uuid: 827346ff-dfe4-4c91-8d59-894cd4236de4
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_minutes
+    - node.type.event
+  module:
+    - text
+id: node.event.field_minutes
+field_name: field_minutes
+entity_type: node
+bundle: event
+label: Protokoll
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

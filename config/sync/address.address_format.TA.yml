@@ -1,0 +1,18 @@
+uuid: 14c2eb40-363d-4560-8504-4eb2531218c9
+langcode: en
+status: true
+dependencies: {  }
+countryCode: TA
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%locality"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: null
+postalCodePattern: null
+postalCodePrefix: null

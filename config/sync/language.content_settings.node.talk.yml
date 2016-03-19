@@ -1,0 +1,11 @@
+uuid: 21b12ed1-bcbb-4ac0-8405-5a81a345d718
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.talk
+id: node.talk
+target_entity_type_id: node
+target_bundle: talk
+default_langcode: site_default
+language_alterable: false

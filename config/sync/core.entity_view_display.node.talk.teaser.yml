@@ -1,0 +1,27 @@
+uuid: a683cb81-a1d3-4372-8208-8a8a101aa5ab
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.talk.body
+    - node.type.talk
+  module:
+    - text
+    - user
+id: node.talk.teaser
+targetEntityType: node
+bundle: talk
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  langcode: true

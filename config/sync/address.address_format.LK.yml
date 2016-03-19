@@ -1,0 +1,18 @@
+uuid: 2efac6d2-116a-4644-862a-42aa8458965e
+langcode: en
+status: true
+dependencies: {  }
+countryCode: LK
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%locality\n%postalCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '\d{5}'
+postalCodePrefix: null

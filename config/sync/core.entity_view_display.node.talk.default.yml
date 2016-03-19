@@ -1,0 +1,25 @@
+uuid: f80f43c2-467c-4e11-a000-eef05e1b1730
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.talk.body
+    - node.type.talk
+  module:
+    - text
+    - user
+id: node.talk.default
+targetEntityType: node
+bundle: talk
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  langcode: true
