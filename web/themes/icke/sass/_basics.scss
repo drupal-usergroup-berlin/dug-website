@@ -1,0 +1,42 @@
+// Basics
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+body {
+
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-family: $font-sans;
+  font-weight: 400;
+  color: $font-color-default;
+
+  @include breakpoint($tablet-p) {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
+
+a, a:visited {
+  color: $link-color;
+}
+
+p {
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1, h2, h3 {
+  font-family: $font-headline;
+}

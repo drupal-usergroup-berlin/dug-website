@@ -1,0 +1,10 @@
+base:
+  version: 1.x
+  css:
+    theme:
+      css/icke.css: { weight: 10 }
+  js:
+    js/icke.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
