@@ -1,0 +1,49 @@
+uuid: 135f16f1-9fae-4885-9a40-64ef8a7b7729
+langcode: de
+status: true
+dependencies:
+  config:
+    - migrate.migration.d6_user
+  module:
+    - node
+id: d6_node__event
+migration_tags:
+  - 'Drupal 6'
+label: 'Nodes (event)'
+source:
+  plugin: d6_node
+  database_state_key: migrate_upgrade_6
+  node_type: event
+process:
+  nid: nid
+  vid: vid
+  type: type
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: default_value
+    default_value: full_html
+  body/value: field_bodytext/0/value
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_date: field_date
+  field_location_reference: field_location_reference
+  field_log_reference: field_log_reference
+  field_sessions_reference: field_sessions_reference
+destination:
+  plugin: 'entity:node'
+template: d6_node
+migration_dependencies:
+  required:
+    - d6_user
+    - d6_node_type
