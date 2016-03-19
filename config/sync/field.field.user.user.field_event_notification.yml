@@ -1,0 +1,24 @@
+uuid: 53036782-e6c2-4ce9-8807-7c42861b0a3c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_event_notification
+  module:
+    - user
+id: user.user.field_event_notification
+field_name: field_event_notification
+entity_type: user
+bundle: user
+label: 'Erinnerung vor Teilnahme an Veranstaltung'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Ich möchte vor meiner Teilnahme einer Veranstaltung erinnert werden.'
+  off_label: 'Ich möchte nicht erinnert werden. '
+field_type: boolean

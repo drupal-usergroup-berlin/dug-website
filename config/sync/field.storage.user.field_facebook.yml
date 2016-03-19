@@ -1,0 +1,21 @@
+uuid: f61fca30-7d28-4af9-b31e-309dc7a286dd
+langcode: de
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_facebook
+field_name: field_facebook
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

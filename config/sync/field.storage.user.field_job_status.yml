@@ -1,0 +1,30 @@
+uuid: 81c0227b-7a84-4d80-993b-59d074cfafed
+langcode: de
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_job_status
+field_name: field_job_status
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: freelancer
+      label: Freelancer
+    -
+      value: hired
+      label: Hired
+    -
+      value: entrepreneur
+      label: Unternehmer
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

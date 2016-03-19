@@ -1,0 +1,20 @@
+uuid: fca28553-2ce8-4465-8b00-eaaf5e2eceac
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_xing
+  module:
+    - user
+id: user.user.field_xing
+field_name: field_xing
+entity_type: user
+bundle: user
+label: XING
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

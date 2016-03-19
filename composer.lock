@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b4e58d2910bcba65801f9476182ab13e",
-    "content-hash": "928869eb46441c37c3e6e105616e2a5d",
+    "hash": "25b01f04cb4a3131d3bd19f50c4f6263",
+    "content-hash": "9be386259705c3753d34778dfb18f6a2",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -1211,6 +1211,44 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2016-03-02 10:31:56"
+        },
+        {
+            "name": "drupal/field_group",
+            "version": "8.1.0-rc4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/field_group",
+                "reference": "54354bfa0c7736ee2c9f6a289dba8aa03c059aaf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0-rc4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/field": "8.*"
+            },
+            "replace": {
+                "drupal/field_group_migrate": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/field_group_migrate"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides the ability to group your fields on both form and display.",
+            "homepage": "https://www.drupal.org/project/field_group",
+            "time": "2015-12-10 12:36:16"
         },
         {
             "name": "drupal/migrate_plus",

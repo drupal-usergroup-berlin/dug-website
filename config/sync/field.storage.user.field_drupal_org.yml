@@ -1,0 +1,20 @@
+uuid: de205c64-0628-447c-ad00-ff8fdd2f7600
+langcode: de
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_drupal_org
+field_name: field_drupal_org
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
