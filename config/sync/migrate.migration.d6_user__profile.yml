@@ -58,7 +58,12 @@ process:
         default_value: 0
         map:
           '1 ': 1
-  user_picture/traget_id: field_photo/0/fid
+  user_picture:
+    target_id:
+      plugin: migration
+      migration: d6_file
+      no_stub: true
+      source: field_photo/0/fid
 destination:
   plugin: 'entity:user'
 template: d6_node
