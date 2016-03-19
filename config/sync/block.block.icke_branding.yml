@@ -1,0 +1,25 @@
+uuid: fbb51e31-c9de-4d74-8206-6cd1d83d69a0
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - icke
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: icke_branding
+theme: icke
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

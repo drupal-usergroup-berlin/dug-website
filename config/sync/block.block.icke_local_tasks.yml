@@ -1,0 +1,22 @@
+uuid: fd12f2ec-ae02-43ab-9e03-3bda9cf4e914
+langcode: de
+status: true
+dependencies:
+  theme:
+    - icke
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: icke_local_tasks
+theme: icke
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

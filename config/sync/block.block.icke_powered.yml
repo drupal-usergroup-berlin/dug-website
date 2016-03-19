@@ -1,0 +1,22 @@
+uuid: 2311acda-3973-4cd5-ae1a-26070ed7e320
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - icke
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: icke_powered
+theme: icke
+region: footer
+weight: -4
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

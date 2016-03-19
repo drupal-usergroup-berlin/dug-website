@@ -1,0 +1,20 @@
+uuid: 672a11db-f497-4dae-ac00-fbfccfc59b47
+langcode: de
+status: true
+dependencies:
+  theme:
+    - icke
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: icke_local_actions
+theme: icke
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primäre Admin-Aktionen'
+  provider: core
+  label_display: '0'
+visibility: {  }

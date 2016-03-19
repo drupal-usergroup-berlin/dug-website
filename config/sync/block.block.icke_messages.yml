@@ -1,0 +1,22 @@
+uuid: e2ca5f88-8241-438e-9000-bc871bd6d782
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - icke
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: icke_messages
+theme: icke
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Status-Nachrichten
+  provider: system
+  label_display: '0'
+visibility: {  }

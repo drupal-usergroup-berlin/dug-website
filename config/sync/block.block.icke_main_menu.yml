@@ -1,0 +1,26 @@
+uuid: 1d29e539-f6b7-48b5-9838-566db64b8c13
+langcode: de
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - icke
+_core:
+  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
+id: icke_main_menu
+theme: icke
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: Hauptnavigation
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }
