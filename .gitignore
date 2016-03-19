@@ -15,3 +15,4 @@ web/sites/default/files
 web/sites/default/settings.local.php
 config/migrate
 .DS_Store
+web/themes/icke/config.codekit
