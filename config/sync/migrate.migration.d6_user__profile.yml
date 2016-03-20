@@ -14,9 +14,20 @@ source:
   plugin: d6_content_profile
   database_state_key: migrate_upgrade_6
   node_type: profile
+  constants:
+    drupal_org: 'https://www.drupal.org/user/'
 process:
   uid: node_uid
-  field_drupal_org: field_drupal_org
+  field_drupal_org/uri:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_drupal_org/0/value
+    -
+      plugin: concat
+      source:
+        - constants/drupal_org
+        - field_drupal_org/0/value
   field_facebook:
     plugin: iterator
     source: field_facebook

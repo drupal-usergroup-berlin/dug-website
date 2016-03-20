@@ -25,4 +25,13 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_comment_notification: true
+  field_drupal_org: true
+  field_event_notification: true
+  field_facebook: true
+  field_first_name: true
+  field_job_status: true
+  field_last_name: true
+  field_twitter: true
+  field_xing: true
   member_for: true

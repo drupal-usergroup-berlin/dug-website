@@ -17,6 +17,7 @@ dependencies:
     - image.style.thumbnail
   module:
     - image
+    - link
     - options
     - user
 _core:
@@ -36,13 +37,16 @@ content:
     third_party_settings: {  }
     type: boolean
   field_drupal_org:
-    weight: 14
+    weight: 16
     label: above
     settings:
-      thousand_separator: ''
-      prefix_suffix: true
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: number_integer
+    type: link
   field_event_notification:
     weight: 10
     label: above

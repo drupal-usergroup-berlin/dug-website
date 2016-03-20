@@ -18,6 +18,7 @@ dependencies:
   module:
     - field_group
     - image
+    - link
     - user
 third_party_settings:
   field_group:
@@ -58,11 +59,12 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
   field_drupal_org:
-    weight: 13
+    weight: 18
     settings:
-      placeholder: ''
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
-    type: number
+    type: link_default
   field_event_notification:
     weight: 9
     settings:

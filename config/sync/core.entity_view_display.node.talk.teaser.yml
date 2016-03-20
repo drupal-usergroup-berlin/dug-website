@@ -24,4 +24,10 @@ content:
   links:
     weight: 100
 hidden:
+  comment: true
+  field_difficulty: true
+  field_done: true
+  field_duration: true
+  field_topics: true
+  field_type: true
   langcode: true
