@@ -10,6 +10,7 @@ dependencies:
     - field.field.user.user.field_first_name
     - field.field.user.user.field_job_status
     - field.field.user.user.field_last_name
+    - field.field.user.user.field_skills
     - field.field.user.user.field_twitter
     - field.field.user.user.field_xing
     - field.field.user.user.user_picture
@@ -94,6 +95,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_skills:
+    weight: 17
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_twitter:
     weight: 15
     settings:

@@ -12,8 +12,7 @@ use Drupal\migrate\Row;
  * @param \Drupal\migrate\Entity\MigrationInterface $migration
  */
 function dug_migrate_migrate_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
-  $migration_prefix = 'd6_node__';
-  if (strpos($migration->id(), $migration_prefix) !== FALSE) {
+  if (in_array($migration->id(), ['d6_node__event', 'd6_node__talk', 'd6_user__profile'])) {
     $rows = $source->getDatabase()->query('SELECT td.tid, td.vid  FROM {term_node} tn INNER JOIN {term_data} td ON tn.tid = td.tid WHERE tn.vid = :vid', [':vid' => $row->getSourceProperty('vid')])->fetchAll();
     $terms = [];
     foreach ($rows as $term) {

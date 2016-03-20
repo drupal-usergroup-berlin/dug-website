@@ -1,0 +1,28 @@
+uuid: de447c4c-a4a6-4a9c-9c13-1964059dbcc2
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_skills
+    - taxonomy.vocabulary.user_tags
+  module:
+    - user
+id: user.user.field_skills
+field_name: field_skills
+entity_type: user
+bundle: user
+label: Skills
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      user_tags: user_tags
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference
