@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.talk.field_done
     - field.field.node.talk.field_duration
     - field.field.node.talk.field_slides
+    - field.field.node.talk.field_slides_link
     - field.field.node.talk.field_tags
     - field.field.node.talk.field_topics
     - field.field.node.talk.field_type
@@ -17,6 +18,7 @@ dependencies:
   module:
     - comment
     - file
+    - link
     - path
     - text
 id: node.talk.default
@@ -70,6 +72,13 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+  field_slides_link:
+    weight: 41
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   field_tags:
     weight: 38
     settings:
