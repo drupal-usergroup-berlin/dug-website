@@ -17,7 +17,7 @@ process:
     plugin: static_map
     map:
       1: tags
-      2: user_tags
+      2: tags
     source: vid
   name: name
   description: description

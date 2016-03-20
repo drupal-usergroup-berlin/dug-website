@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.user.field_skills
-    - taxonomy.vocabulary.user_tags
+    - taxonomy.vocabulary.tags
   module:
     - user
 id: user.user.field_skills
@@ -21,7 +21,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      user_tags: user_tags
+      tags: tags
     sort:
       field: _none
     auto_create: true
