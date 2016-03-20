@@ -1,13 +1,21 @@
 uuid: 033a8755-2917-4991-bf52-822afe83f18e
 langcode: de
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: zhtPXoRcC6REiepM0k16zw__FDW5YOXDR6U2WlldTrs
-name: 'Einfache Seite'
+name: Standardseite
 type: page
-description: 'Benutzen Sie <em>Einfache Seiten</em> für statischen Inhalt, wie z.B. eine „Über uns“ Seite.'
+description: 'Standardseiten sind unter einem eigenen Pfad abrufbar und in der Regel in Seitenmenüs eingebunden.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false

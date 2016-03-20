@@ -68,6 +68,8 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  flag_signup:
+    weight: 10
   links:
     weight: 0
     settings: {  }

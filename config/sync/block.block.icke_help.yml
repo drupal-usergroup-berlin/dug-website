@@ -1,6 +1,6 @@
 uuid: 1287b523-585f-462a-a200-ec6ba13d29ca
 langcode: de
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -10,7 +10,7 @@ _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
 id: icke_help
 theme: icke
-region: content
+region: '-1'
 weight: -3
 provider: null
 plugin: help_block
