@@ -3,21 +3,8 @@
   "version": "0.0.1",
   "description": "",
   "devDependencies": {
-
-    "gulp": "3.9.0",
-    "gulp-autoprefixer": "*",
-    "gulp-concat": "2.4.2",
-    "gulp-concat-css": "*",
-    "gulp-clean-css": "*",
-    "gulp-newer": "0.5.0",
-    "gulp-pixrem": "latest",
-    "gulp-sass": "latest",
-    "gulp-shell": "*",
-
-    "gulp-uglify": "1.0.2",
-
-    "require-dir": "*",
-    "requirejs": "*"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
   },
   "dependencies": {
     "susy": "2.2.9"
