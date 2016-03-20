@@ -39,7 +39,7 @@ process:
       source: field_bodytext/0/value
     -
       plugin: callback
-      callable: "\Drupal\dug_migrate\MigrationHelper::convertUrlToLink"
+      callable: '\Drupal\dug_migrate\MigrationHelper::convertUrlToLink'
   revision_uid: revision_uid
   revision_log: log
   revision_timestamp: timestamp
