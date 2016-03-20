@@ -32,6 +32,7 @@ hidden:
   field_first_name: true
   field_job_status: true
   field_last_name: true
+  field_skills: true
   field_twitter: true
   field_xing: true
   member_for: true
