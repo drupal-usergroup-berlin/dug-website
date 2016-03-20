@@ -20,10 +20,10 @@ unflag_long: ''
 unflag_message: ''
 unflag_denied_text: ''
 flag_type: 'entity:node'
-link_type: reload
+link_type: ajax_link
 flagTypeConfig:
   show_in_links:
-    full: '0'
+    full: full
     rss: '0'
     search_index: '0'
     search_result: '0'
