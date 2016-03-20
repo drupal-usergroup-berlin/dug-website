@@ -177,7 +177,7 @@ display:
     display_plugin: embed
     id: embed_submitted
     display_title: 'Submitted Talks'
-    position: 1
+    position: 2
     display_options:
       display_extenders: {  }
       style:
@@ -271,11 +271,115 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  embed_submitted_front:
+    display_plugin: embed
+    id: embed_submitted_front
+    display_title: 'Submitted Talks (front page)'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      defaults:
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+        pager: false
+      row:
+        type: 'entity:node'
+        options:
+          view_mode: teaser
+      filters:
+        status:
+          value: true
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            talk: talk
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: reverse__node__field_talks
+          group_type: group
+          admin_label: ''
+          operator: empty
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: nid
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+      pager:
+        type: some
+        options:
+          items_per_page: 3
+          offset: 0
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   embed_talks_next:
     display_plugin: embed
     id: embed_talks_next
     display_title: 'Upcoming Talks'
-    position: 1
+    position: 4
     display_options:
       display_extenders: {  }
       style:
@@ -430,7 +534,7 @@ display:
     display_plugin: embed
     id: embed_talks_presented
     display_title: 'Presented Talks'
-    position: 1
+    position: 3
     display_options:
       display_extenders: {  }
       style:
