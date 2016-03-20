@@ -1,0 +1,11 @@
+uuid: a20026c8-1cea-46e6-8d4d-7733017e360d
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.teaser
+id: node.teaser
+target_entity_type_id: node
+target_bundle: teaser
+default_langcode: site_default
+language_alterable: false

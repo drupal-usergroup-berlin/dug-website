@@ -1,0 +1,17 @@
+uuid: 99ef8f23-ab4a-4bfa-b100-f29d4570af64
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Teaser
+type: teaser
+description: 'Ankündigungen oder Aufrufe (Callouts), optional mit Link, die in andere Seiten eingebunden werden.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

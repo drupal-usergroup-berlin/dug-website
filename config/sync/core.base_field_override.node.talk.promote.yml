@@ -1,0 +1,22 @@
+uuid: f902ed84-16d7-4c2c-9600-a86db17b29a4
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.talk
+id: node.talk.promote
+field_name: promote
+entity_type: node
+bundle: talk
+label: 'Auf der Startseite'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

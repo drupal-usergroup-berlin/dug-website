@@ -1,0 +1,23 @@
+uuid: e296e937-4efc-4eb8-a54e-78566ec99f29
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_link
+    - node.type.teaser
+  module:
+    - link
+id: node.teaser.field_teaser_link
+field_name: field_teaser_link
+entity_type: node
+bundle: teaser
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link
