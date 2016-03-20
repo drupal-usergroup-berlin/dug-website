@@ -1,9 +1,18 @@
-@import "normalize/import-now";
-@import "mixins/susy/sass/susy";
+@import "lib/normalize/import-now";
+
 @import "grid-settings";
-@import "mixins/breakpoint-sass/stylesheets/breakpoint";
+
+@import "lib/sassy-maps/sass/sassy-maps";
+@import "lib//breakpoint-sass/stylesheets/breakpoint";
+@import "lib//susy/sass/susy";
+
 @import "variables";
-@import "mixins";
 @import "basics";
 @import "layout";
-@import "footer";
+@import "components/debug";
+@import "components/section";
+@import "components/teaser";
+
+@import "components/header";
+@import "components/footer";
+

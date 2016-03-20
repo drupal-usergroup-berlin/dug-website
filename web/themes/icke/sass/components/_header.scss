@@ -1,0 +1,43 @@
+header {
+  &:before {
+    content: "";
+    display: block;
+
+    background: white url('../images/logo-blue-transparent.png') center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    color: white;
+    min-height: 240px;
+  }
+
+  .site-name {
+    display: none;
+  }
+
+  //a, a:visited {
+  //  color: inherit;
+  //  text-decoration: none;
+  //}
+
+  nav.menu--main {
+    ul {
+      text-align: center;
+    }
+    li.menu-item {
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+
+  nav.menu--account {
+    position: fixed;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: $color-black;
+    right: 0;
+    color: white;
+    top: 200px;
+    top: .2vh;
+    padding: 5px;
+  }
+}

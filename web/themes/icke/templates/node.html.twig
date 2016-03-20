@@ -76,15 +76,17 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% else %}
-    <h1>{{ label }}</h1>
+  {% if display_title %}
+    {{ title_prefix }}
+    {% if not page %}
+      <h2{{ title_attributes }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% else %}
+      <h1>{{ label }}</h1>
+    {% endif %}
+    {{ title_suffix }}
   {% endif %}
-  {{ title_suffix }}
 
   {#
   {% if display_submitted %}

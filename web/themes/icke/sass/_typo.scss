@@ -1,0 +1,11 @@
+@mixin typo() {
+  h1, h2, h3, h4, h5, h6, p, li, blockquote {
+    max-width: 40em;
+  }
+  p, li {
+    margin-bottom: 1.4em;
+  }
+  p + p, li + li {
+    margin-top: -.7em;
+  }
+}

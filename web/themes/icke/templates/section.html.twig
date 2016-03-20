@@ -1,0 +1,12 @@
+
+{%
+set classes = ['section']
+%}
+<div{{ attributes.addClass(classes) }}>
+  {% if title %}
+    <{{ title_tag|raw }}{{ title_attributes }}>{{ title }}</{{ title_tag|raw }}>
+  {% endif %}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>
