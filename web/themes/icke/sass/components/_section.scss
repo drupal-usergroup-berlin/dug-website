@@ -1,3 +1,19 @@
 .section {
-  @extend %debug-container;
+  //@extend %debug-container;
+}
+
+//TODO: more purposeful semantic, e.g. page-section or section-block
+
+/* Section: Layout */
+
+.section {
+  box-sizing: border-box;
+  padding: 5em 2%;
+}
+
+.section-content {
+  margin: 0 auto;
+  
+  max-width: 960px;
+}
 }
