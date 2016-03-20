@@ -39,7 +39,10 @@ process:
   changed: timestamp
   status: status
   thread: thread
-  comment_body/value: comment
+  comment_body/value:
+    plugin: callback
+    callable: '\Drupal\dug_migrate\MigrationHelper::convertTextToHtml'
+    source: comment
   comment_body/format: constants/comment_body_format
 destination:
   plugin: 'entity:comment'

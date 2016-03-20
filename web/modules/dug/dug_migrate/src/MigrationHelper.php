@@ -9,7 +9,9 @@ namespace Drupal\dug_migrate;
 
 class MigrationHelper {
 
-  public static function convertUrlToLink($text) {
+  public static function convertTextToHtml($text) {
+    $text = _filter_autop($text);
+
     $filter = (object) [
       'settings' => [
         'filter_url_length' => 72,
