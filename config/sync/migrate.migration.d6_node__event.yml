@@ -44,7 +44,10 @@ process:
   revision_log: log
   revision_timestamp: timestamp
   field_date: field_date
-  field_location_reference: field_location_reference
+  field_location:
+    plugin: callback
+    callable: '\Drupal\dug_migrate\MigrationHelper::locationToAddress'
+    source: field_location_reference/0/nid
   field_log_reference: field_log_reference
   field_talks:
     plugin: iterator
