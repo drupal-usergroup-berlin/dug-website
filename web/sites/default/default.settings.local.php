@@ -1,10 +1,11 @@
 <?php
 
-// include local services.yml for development
-// $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/local.services.yml';
+include __DIR__ . '/settings.env.dev.php';
+
+$settings['hash_salt'] = 'whatever';
 
 $databases['default']['default'] = array (
- 'database' => '',
+  'database' => '',
   'username' => '',
   'password' => '',
   'host' => 'localhost',
@@ -13,8 +14,6 @@ $databases['default']['default'] = array (
   'prefix' => '',
   'collation' => 'utf8mb4_general_ci',
 );
-
-$settings['hash_salt'] = 'whatever';
 
 // useful development settings
 // uncomment to activate
