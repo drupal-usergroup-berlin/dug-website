@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.talk.field_difficulty
     - field.field.node.talk.field_done
     - field.field.node.talk.field_duration
+    - field.field.node.talk.field_tags
     - field.field.node.talk.field_topics
     - field.field.node.talk.field_type
     - node.type.talk
@@ -54,6 +55,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+  field_tags:
+    weight: 38
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_topics:
     weight: 36
     settings:
