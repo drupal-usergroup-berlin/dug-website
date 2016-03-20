@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25b01f04cb4a3131d3bd19f50c4f6263",
-    "content-hash": "9be386259705c3753d34778dfb18f6a2",
+    "hash": "c12adcae4b09af343c5b29eaee4a5779",
+    "content-hash": "bf963aeb97de605dbeef1f64d74c5045",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -1249,6 +1249,36 @@
             "description": "Provides the ability to group your fields on both form and display.",
             "homepage": "https://www.drupal.org/project/field_group",
             "time": "2015-12-10 12:36:16"
+        },
+        {
+            "name": "drupal/flag",
+            "version": "dev-8.x-4.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/flag",
+                "reference": "9c41c0d6a3e50981a9930f3701a667a4a0364de4"
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/flag_bookmark": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/flag_bookmark",
+                "drupal/node": "Required by drupal/flag_bookmark",
+                "drupal/views": "Required by drupal/flag_bookmark"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-4.x": "8.4.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Create customized flags that users can set on entities.",
+            "homepage": "https://www.drupal.org/project/flag",
+            "time": "2016-02-19 10:08:11"
         },
         {
             "name": "drupal/migrate_plus",
@@ -5720,6 +5750,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/address": 20,
+        "drupal/flag": 20,
         "jcalderonzumba/gastonjs": 20
     },
     "prefer-stable": true,
