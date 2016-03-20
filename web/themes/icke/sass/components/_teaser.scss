@@ -1,3 +1,11 @@
 article.node--event--teaser {
-  @extend %debug-container;
+  //@extend %debug-container;
+}
+
+/* Event Teaser: Separators */
+
+article.node--event--teaser + article.node--event--teaser  {
+  padding-top: 2em;
+  margin-top: 2em;
+  border-top: 1px rgb(30,30,30) solid;
 }
