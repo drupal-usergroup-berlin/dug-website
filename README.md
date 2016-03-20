@@ -10,18 +10,29 @@ Systemvoraussetzungen:
 - drush
 - mysql o. andere DB
 
-Installation auf einem lokalen Webserver
+## Installation auf einem lokalen Webserver
 
-1. repo clonen
-git clone git@github.com:drupal-usergroup-berlin/dug-website.git
+1. Repo clonen:
 
+    ```
+    git clone git@github.com:drupal-usergroup-berlin/dug-website.git
+    ```
+  
 2. im Root-Verzeichnis ausführen:
-composer install
 
-3. default.settings.local.php umbenennen in settings.local.php und die Einträge für die Datenbankverbindung anpassen.
+    ```
+    composer install
+    ```
 
-4. im Ordner /web folgendes ausführen:
-drush custom-site-install -y
+3. `default.settings.local.php` umbenennen in `settings.local.php` und die Einträge für die Datenbankverbindung anpassen.
 
-5. im Ordner /web folgendes ausführen:
-drush upwd admin --password=admin
+4. im Ordner `/web` folgendes ausführen:  
+
+  ```
+  drush custom-site-install -y
+  ```
+
+5. im Ordner `/web` folgendes ausführen:
+  ```
+  drush upwd admin --password=admin
+  ```
