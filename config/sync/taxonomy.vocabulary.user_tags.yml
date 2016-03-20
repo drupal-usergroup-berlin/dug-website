@@ -1,0 +1,9 @@
+uuid: 36764000-7287-45fb-b902-2da1a098cf19
+langcode: de
+status: true
+dependencies: {  }
+name: 'User tags'
+vid: user_tags
+description: ''
+hierarchy: 0
+weight: 0
