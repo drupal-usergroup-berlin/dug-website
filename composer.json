@@ -65,6 +65,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/core": {
+                "Remove array typehints from batch callbacks": "https://www.drupal.org/files/issues/2664290-17.patch"
+            }
         }
     }
 }
