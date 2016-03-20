@@ -17,3 +17,4 @@ config/migrate
 .DS_Store
 web/themes/icke/config.codekit
 web/themes/icke/node_modules
+web/themes/icke/css/icke.css
