@@ -5,15 +5,18 @@ dependencies:
   config:
     - field.field.node.talk.body
     - field.field.node.talk.comment
+    - field.field.node.talk.field_attachments
     - field.field.node.talk.field_difficulty
     - field.field.node.talk.field_done
     - field.field.node.talk.field_duration
+    - field.field.node.talk.field_slides
     - field.field.node.talk.field_tags
     - field.field.node.talk.field_topics
     - field.field.node.talk.field_type
     - node.type.talk
   module:
     - comment
+    - file
     - path
     - text
 id: node.talk.default
@@ -39,6 +42,12 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_attachments:
+    weight: 39
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
   field_difficulty:
     weight: 35
     settings: {  }
@@ -55,6 +64,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+  field_slides:
+    weight: 40
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
   field_tags:
     weight: 38
     settings:

@@ -1,0 +1,27 @@
+uuid: 748cfcee-c617-48c3-a606-6a7386a5b89f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - node.type.talk
+  module:
+    - file
+id: node.talk.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: talk
+label: Anhang
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'zip rar tar.gz tgz'
+  max_filesize: '20'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

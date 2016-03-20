@@ -70,6 +70,8 @@ process:
         map:
           done: 1
   field_tags: taxonomy_terms/1
+  field_slides: field_slides/0/fid
+  field_attachments: field_attachment/0/fid
 destination:
   plugin: 'entity:node'
 template: d6_node
