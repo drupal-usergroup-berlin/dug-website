@@ -1,0 +1,36 @@
+uuid: f51a43b6-9fc3-4b4d-8d01-1b78a2238171
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: signup
+label: Signup
+bundles:
+  - event
+entity_type: node
+enabled: true
+global: false
+weight: 0
+flag_short: Teilnehmen
+flag_long: ''
+flag_message: ''
+unflag_short: Absagen
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: reload
+flagTypeConfig:
+  show_in_links:
+    full: '0'
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    teaser: '0'
+  show_as_field: 1
+  show_on_form: 0
+  show_contextual_link: 0
+  i18n: '0'
+  access_author: ''
+linkTypeConfig: {  }
