@@ -1,5 +1,8 @@
 // Basics
 
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic");
+
 html {
   box-sizing: border-box;
 }
@@ -12,7 +15,6 @@ strong, b {
 }
 
 body {
-
   font-size: 1.8rem;
   line-height: 1.5;
   font-family: $font-sans;

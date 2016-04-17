@@ -1,0 +1,10 @@
+{%
+  set classes = [
+    'section',
+    'section-type--teaser',
+    not node.isPublished() ? 'node--unpublished',
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ content }}
+</div>

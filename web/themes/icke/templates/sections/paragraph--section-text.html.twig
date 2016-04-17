@@ -1,0 +1,12 @@
+{%
+  set classes = [
+    'section',
+    'section-type--text',
+    content.field_section_link ? 'section--has-link'
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ content.field_section_title }}
+  {{ content.field_section_text }}
+  {{ content.field_section_link }}
+</div>
