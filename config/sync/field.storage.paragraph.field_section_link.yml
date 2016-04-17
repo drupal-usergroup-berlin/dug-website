@@ -1,13 +1,13 @@
-uuid: 49c6489c-e6f7-4e6b-9000-f26d03ea81a0
+uuid: b8672f02-7069-4a32-a0a2-60688c0b5768
 langcode: de
 status: true
 dependencies:
   module:
     - link
-    - node
-id: node.field_teaser_link
-field_name: field_teaser_link
-entity_type: node
+    - paragraphs
+id: paragraph.field_section_link
+field_name: field_section_link
+entity_type: paragraph
 type: link
 settings: {  }
 module: link

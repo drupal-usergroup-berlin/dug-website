@@ -1,20 +1,20 @@
-uuid: e296e937-4efc-4eb8-a54e-78566ec99f29
+uuid: f2cc52cd-7698-47a9-8238-6921ce2bf1f0
 langcode: de
 status: true
 dependencies:
   config:
-    - field.storage.node.field_teaser_link
-    - node.type.teaser
+    - field.storage.node.field_section_link
+    - node.type.section_teaser
   module:
     - link
-id: node.teaser.field_teaser_link
-field_name: field_teaser_link
+id: node.section_teaser.field_section_link
+field_name: field_section_link
 entity_type: node
-bundle: teaser
+bundle: section_teaser
 label: Link
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

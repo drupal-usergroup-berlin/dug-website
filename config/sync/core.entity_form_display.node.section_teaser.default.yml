@@ -1,0 +1,67 @@
+uuid: 0bd93ed6-621b-43d9-b77c-756d1a6c9f2c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.section_teaser.field_section_link
+    - field.field.node.section_teaser.field_section_text
+    - field.field.node.section_teaser.field_section_title
+    - node.type.section_teaser
+  module:
+    - link
+    - text
+id: node.section_teaser.default
+targetEntityType: node
+bundle: section_teaser
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+  field_section_link:
+    type: link_default
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_section_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_section_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  langcode:
+    type: language_select
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  path: true
+  promote: true
+  sticky: true

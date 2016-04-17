@@ -1,13 +1,13 @@
-uuid: 6c240eab-aff7-4396-9300-dc70bf32bff1
+uuid: 9f634dbb-8779-4eaa-80e3-affa17a4eba2
 langcode: de
 status: true
 dependencies:
   config:
-    - node.type.teaser
-id: node.teaser.promote
+    - node.type.section_teaser
+id: node.section_teaser.promote
 field_name: promote
 entity_type: node
-bundle: teaser
+bundle: section_teaser
 label: 'Auf der Startseite'
 description: ''
 required: false

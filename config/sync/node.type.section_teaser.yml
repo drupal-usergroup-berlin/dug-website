@@ -1,4 +1,4 @@
-uuid: 99ef8f23-ab4a-4bfa-b100-f29d4570af64
+uuid: cd133c02-e59c-4bde-9a68-cbbd3214d203
 langcode: de
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus: {  }
     parent: ''
 name: Teaser
-type: teaser
+type: section_teaser
 description: 'Ankündigungen oder Aufrufe (Callouts), optional mit Link, die in andere Seiten eingebunden werden.'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
 display_submitted: false

@@ -1,0 +1,6 @@
+uuid: 8b3cecbb-2f96-48bb-8d85-97b8536bda19
+langcode: de
+status: true
+dependencies: {  }
+id: section_view
+label: 'Dynamische Liste (view)'

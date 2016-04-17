@@ -1,0 +1,36 @@
+uuid: b322c9c9-e223-4acb-b4e1-6626ec46072b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_view
+    - paragraphs.paragraphs_type.section_view
+  module:
+    - viewfield
+id: paragraph.section_view.field_section_view
+field_name: field_section_view
+entity_type: paragraph
+bundle: section_view
+label: View
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    block_content: '0'
+    comments_recent: '0'
+    content: '0'
+    content_recent: '0'
+    event_signups: '0'
+    events: '0'
+    files: '0'
+    frontpage: '0'
+    talks: '0'
+    taxonomy_term: '0'
+    user_admin_people: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+field_type: viewfield

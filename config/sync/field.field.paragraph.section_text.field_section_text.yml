@@ -1,0 +1,21 @@
+uuid: 350c26da-337c-4489-9908-4fecfba0d249
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_text
+    - paragraphs.paragraphs_type.section_text
+  module:
+    - text
+id: paragraph.section_text.field_section_text
+field_name: field_section_text
+entity_type: paragraph
+bundle: section_text
+label: Text
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

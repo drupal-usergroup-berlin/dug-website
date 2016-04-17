@@ -1,0 +1,46 @@
+uuid: fe8fd838-0a9a-4f6a-8828-619e7987bcc9
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.section_teaser.field_section_link
+    - field.field.node.section_teaser.field_section_text
+    - field.field.node.section_teaser.field_section_title
+    - node.type.section_teaser
+  module:
+    - link
+    - text
+    - user
+id: node.section_teaser.teaser
+targetEntityType: node
+bundle: section_teaser
+mode: teaser
+content:
+  field_section_link:
+    type: link
+    weight: 2
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_section_text:
+    type: text_default
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_section_title:
+    type: string
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  links: true

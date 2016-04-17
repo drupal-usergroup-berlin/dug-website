@@ -1,0 +1,40 @@
+uuid: bb7af1b3-4724-47a6-90da-83f8659fbb0b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_view.field_section_link
+    - field.field.paragraph.section_view.field_section_title
+    - field.field.paragraph.section_view.field_section_view
+    - paragraphs.paragraphs_type.section_view
+  module:
+    - link
+    - viewfield
+id: paragraph.section_view.default
+targetEntityType: paragraph
+bundle: section_view
+mode: default
+content:
+  field_section_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_section_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_section_view:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+hidden:
+  created: true
+  status: true
+  uid: true

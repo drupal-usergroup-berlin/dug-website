@@ -1,0 +1,21 @@
+uuid: f4b9219a-3e2c-47db-83a3-19270cf393f7
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section_text
+    - node.type.section_teaser
+  module:
+    - text
+id: node.section_teaser.field_section_text
+field_name: field_section_text
+entity_type: node
+bundle: section_teaser
+label: Text
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: f321b270-f85a-4ffd-9d6a-8aafc0a0c316
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section_title
+    - node.type.section_teaser
+id: node.section_teaser.field_section_title
+field_name: field_section_title
+entity_type: node
+bundle: section_teaser
+label: Überschrift
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

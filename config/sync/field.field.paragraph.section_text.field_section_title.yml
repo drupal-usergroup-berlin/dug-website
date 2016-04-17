@@ -1,0 +1,19 @@
+uuid: bd1f0b97-13fa-4c63-a1ff-913fdc297267
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_title
+    - paragraphs.paragraphs_type.section_text
+id: paragraph.section_text.field_section_title
+field_name: field_section_title
+entity_type: paragraph
+bundle: section_text
+label: Überschrift
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

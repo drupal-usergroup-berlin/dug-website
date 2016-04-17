@@ -1,0 +1,45 @@
+uuid: 8da1c1ad-3904-47dc-95a3-a998c6486201
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.section_teaser.field_section_link
+    - field.field.node.section_teaser.field_section_text
+    - field.field.node.section_teaser.field_section_title
+    - node.type.section_teaser
+  module:
+    - link
+    - text
+    - user
+id: node.section_teaser.default
+targetEntityType: node
+bundle: section_teaser
+mode: default
+content:
+  field_section_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_section_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_section_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  langcode: true
+  links: true

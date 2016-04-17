@@ -1,0 +1,27 @@
+uuid: 3bfe1bcc-81a0-4789-b315-5b9adca585a4
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_teaser
+    - node.type.section_teaser
+    - paragraphs.paragraphs_type.section_teaser
+id: paragraph.section_teaser.field_section_teaser
+field_name: field_section_teaser
+entity_type: paragraph
+bundle: section_teaser
+label: Teaser
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      section_teaser: section_teaser
+    sort:
+      field: title
+      direction: ASC
+field_type: entity_reference

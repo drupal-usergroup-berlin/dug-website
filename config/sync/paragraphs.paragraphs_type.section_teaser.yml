@@ -1,0 +1,6 @@
+uuid: 2ee88ed9-f9d5-44c1-aa04-885b50759130
+langcode: de
+status: true
+dependencies: {  }
+id: section_teaser
+label: 'Eingebetteter Teaser'

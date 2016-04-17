@@ -15,6 +15,7 @@ module:
   dug_migrate: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference_revisions: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -36,6 +37,7 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  paragraphs: 0
   path: 0
   quickedit: 0
   search: 0
@@ -47,6 +49,8 @@ module:
   tour: 0
   update: 0
   user: 0
+  viewfield: 0
+  views_infinite_scroll: 0
   views_ui: 0
   menu_link_content: 1
   views: 10

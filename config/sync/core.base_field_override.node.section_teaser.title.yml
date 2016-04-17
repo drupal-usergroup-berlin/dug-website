@@ -1,0 +1,18 @@
+uuid: 178a303a-e874-434a-9a06-1b0291ba7a42
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.section_teaser
+id: node.section_teaser.title
+field_name: title
+entity_type: node
+bundle: section_teaser
+label: 'Interner Titel'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

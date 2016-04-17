@@ -1,0 +1,6 @@
+uuid: ece94f3c-a858-42bd-bbb3-8fad347e9e98
+langcode: de
+status: true
+dependencies: {  }
+id: section_text
+label: Textbereich

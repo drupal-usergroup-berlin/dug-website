@@ -1,0 +1,23 @@
+uuid: 78c1d218-6ae7-482a-88ce-7d0c205545bf
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_teaser.field_section_teaser
+    - paragraphs.paragraphs_type.section_teaser
+id: paragraph.section_teaser.default
+targetEntityType: paragraph
+bundle: section_teaser
+mode: default
+content:
+  field_section_teaser:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+hidden:
+  created: true
+  uid: true

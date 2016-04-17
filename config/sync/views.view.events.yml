@@ -177,6 +177,7 @@ display:
         pager: false
         filters: false
         filter_groups: false
+        empty: false
       filters:
         status:
           value: true
@@ -243,6 +244,20 @@ display:
         groups:
           1: AND
       display_description: ''
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'Momentan sind keine neuen Termine vorhanden. Schau in ein paar Tagen erneut vorbei!'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -371,6 +386,7 @@ display:
         pager: false
         filters: false
         filter_groups: false
+        empty: false
       filters:
         status:
           value: true
@@ -437,6 +453,20 @@ display:
         groups:
           1: AND
       display_description: ''
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'Momentan sind keine neuen Termine vorhanden. Schau in ein paar Tagen erneut vorbei!'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:

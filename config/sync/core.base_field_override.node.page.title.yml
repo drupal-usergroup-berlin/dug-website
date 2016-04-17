@@ -1,0 +1,18 @@
+uuid: cb2b792e-dee7-43da-83f3-579c31085fdf
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.title
+field_name: title
+entity_type: node
+bundle: page
+label: 'Interner Titel'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

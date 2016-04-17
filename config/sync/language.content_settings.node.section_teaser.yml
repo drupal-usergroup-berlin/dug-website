@@ -1,11 +1,11 @@
-uuid: a20026c8-1cea-46e6-8d4d-7733017e360d
+uuid: cfca2b3f-053b-46b7-9c6d-edfcd1419c54
 langcode: de
 status: true
 dependencies:
   config:
-    - node.type.teaser
-id: node.teaser
+    - node.type.section_teaser
+id: node.section_teaser
 target_entity_type_id: node
-target_bundle: teaser
+target_bundle: section_teaser
 default_langcode: site_default
 language_alterable: false
