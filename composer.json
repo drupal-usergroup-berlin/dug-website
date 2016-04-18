@@ -77,6 +77,9 @@
         "patches": {
             "drupal/paragraphs": {
                 "2556539-24": "https://www.drupal.org/files/issues/required_paragraphs_field_unable_to_edit-2556539-24.patch"
+            },
+            "drupal/drupal": {
+                "local-0": "patches/drupal/views-row-fix-wrong-arguments--see-2457999.patch"
             }
         }
     }

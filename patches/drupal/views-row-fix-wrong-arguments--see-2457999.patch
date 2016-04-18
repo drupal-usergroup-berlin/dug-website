@@ -1,0 +1,13 @@
+diff --git a/core/modules/views/src/Plugin/views/row/RowPluginBase.php b/core/modules/views/src/Plugin/views/row/RowPluginBase.php
+index e666362..4882914 100644
+--- a/core/modules/views/src/Plugin/views/row/RowPluginBase.php
++++ b/core/modules/views/src/Plugin/views/row/RowPluginBase.php
+@@ -95,7 +95,7 @@ public function buildOptionsForm(&$form, FormStateInterface $form_state) {
+         $data = Views::viewsData()->get($relationship['table']);
+         $base = $data[$relationship['field']]['relationship']['base'];
+         if ($base == $this->base_table) {
+-          $relationship_handler->init($executable, $relationship);
++          $relationship_handler->init($executable, $executable->display_handler, $relationship);
+           $relationship_options[$relationship['id']] = $relationship_handler->adminLabel();
+         }
+       }
