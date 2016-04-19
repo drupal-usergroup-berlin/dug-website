@@ -5,8 +5,19 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.talk.body
+    - field.field.node.talk.comment
+    - field.field.node.talk.field_attachments
+    - field.field.node.talk.field_difficulty
+    - field.field.node.talk.field_done
+    - field.field.node.talk.field_duration
+    - field.field.node.talk.field_slides
+    - field.field.node.talk.field_slides_link
+    - field.field.node.talk.field_tags
+    - field.field.node.talk.field_topics
+    - field.field.node.talk.field_type
     - node.type.talk
   module:
+    - options
     - text
     - user
 id: node.talk.teaser
@@ -17,21 +28,44 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 4
     settings:
       trim_length: 600
     third_party_settings: {  }
+  field_difficulty:
+    type: list_default
+    weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_duration:
+    type: list_default
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_topics:
+    type: entity_reference_label
+    weight: 3
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_type:
+    type: list_default
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   comment: true
   field_attachments: true
-  field_difficulty: true
   field_done: true
-  field_duration: true
   field_slides: true
   field_slides_link: true
   field_tags: true
-  field_topics: true
-  field_type: true
   langcode: true

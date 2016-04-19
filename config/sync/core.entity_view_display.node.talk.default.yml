@@ -48,13 +48,13 @@ content:
     type: file_default
   field_difficulty:
     weight: 105
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_done:
     weight: 102
-    label: above
+    label: inline
     settings:
       format: default
       format_custom_false: ''
@@ -63,7 +63,7 @@ content:
     type: boolean
   field_duration:
     weight: 104
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
@@ -100,11 +100,13 @@ content:
     type: entity_reference_label
   field_type:
     weight: 103
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true
