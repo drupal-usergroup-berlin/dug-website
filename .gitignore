@@ -18,3 +18,4 @@ config/migrate
 web/themes/icke/config.codekit
 web/themes/icke/node_modules
 web/themes/icke/css/icke.css
+drupalberlin_20160426_172547.sql
