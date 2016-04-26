@@ -1,0 +1,40 @@
+uuid: 2b8909b1-2822-4f8f-b8c6-9a018822ef97
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:935ea76d-2be5-4c86-bf09-83f6d0d09442'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - icke
+id: contact_information
+theme: icke
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:935ea76d-2be5-4c86-bf09-83f6d0d09442'
+settings:
+  id: 'block_content:935ea76d-2be5-4c86-bf09-83f6d0d09442'
+  label: 'Kontakt mit der DUG Berlin aufnehmen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
