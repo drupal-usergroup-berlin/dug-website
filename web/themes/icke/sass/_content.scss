@@ -62,6 +62,83 @@
       // border: solid 1px #DDD;
     }
   }
+}
 
 
+.standard-page {
+
+  position: relative;
+
+  .section-type--view {
+    background: #ddd;
+    padding: 2rem 2rem;
+    border-top: solid 2px $light-green;
+
+    @include breakpoint($tablet-l) {
+      padding: 2rem 0;
+    }
+
+    > section {
+      @include container;
+
+      .section-title {
+        margin-top: 0;
+      }
+
+      .section-title,
+      .section-content,
+      .section-link {
+        @include breakpoint($tablet-l) {
+          @include span(5 of 9);
+          @include push(2);
+        }
+      }
+    }
+  }
+  .section-type--teaser {
+    padding: 2rem 2rem;
+
+    @include breakpoint($tablet-l) {
+      padding: 4rem 0;
+    }
+
+    > section {
+      @include container;
+
+
+      .teaser {
+        border: solid 10px $light-green;
+        padding: 2rem;
+
+        @include breakpoint($tablet-l) {
+          @include span(9 of 9);
+        }
+      }
+    }
+  }
+
+  .section-type--text {
+    padding: 2rem 2rem;
+
+    @include breakpoint($tablet-l) {
+      padding: 4rem 0;
+    }
+
+    > section {
+      @include container;
+
+      .section-title {
+        margin-top: 0;
+      }
+
+      .section-title,
+      .section-content,
+      .section-link {
+        @include breakpoint($tablet-l) {
+          @include span(6 of 9);
+          @include push(2);
+        }
+      }
+    }
+  }
 }

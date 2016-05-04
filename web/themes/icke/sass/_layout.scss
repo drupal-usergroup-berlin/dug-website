@@ -4,9 +4,9 @@
 
 
 main {
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
   @include breakpoint($tablet-l) {
-    padding: 4rem 1rem;
+    padding: 4rem 0rem;
   }
 }
 
