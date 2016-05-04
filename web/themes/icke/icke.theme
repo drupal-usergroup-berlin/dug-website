@@ -23,3 +23,8 @@ function icke_preprocess_node__event__teaser(&$vars) {
 
   // @todo Display excerpt from field_minutes for past events.
 }
+
+function icke_preprocess_node(array &$variables) {
+  $node = $variables['node'];
+  $variables['event_date'] = $node->get('field_date')->value;
+}

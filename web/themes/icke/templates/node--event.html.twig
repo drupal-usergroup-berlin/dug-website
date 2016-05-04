@@ -79,7 +79,9 @@
 <article{{ attributes.addClass(classes) }}>
 
   <header>
-    {{ content.field_date }}
+    <time datetime="{{ event_date }}">
+      <span class="date-weekday">{{ event_date | date("D") }}</span><span class="date-binding">, </span><span class="date-day-month">{{ event_date | date("j.n.") }}</span><span class="date-year">{{ event_date | date("Y") }}</span>
+    </time>
     {{ title_prefix }}
     <h1>{{ label }}</h1>
     {{ title_suffix }}
@@ -97,9 +99,10 @@
 
   <section class="event__place-and-time">
     {{ content.field_location }}
-    <p class="placeholder">
-      <em>Placeholder: time of event</em>
+    <p class="event__time">
+      Start: {{ event_date | date("H:i", "Europe/Berlin") }}
     </p>
+
   </section>
 
   {# if content.field_minutes['#items'] #}

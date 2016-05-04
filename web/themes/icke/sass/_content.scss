@@ -1,3 +1,8 @@
 .event__info-label {
   @extend h2;
 }
+
+.event__place-and-time {
+  font-size: $font-size-bigger;
+  margin-bottom: 4rem;
+}
