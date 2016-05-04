@@ -7,6 +7,7 @@
 @import "lib/sassy-maps/sass/sassy-maps";
 @import "lib//breakpoint-sass/stylesheets/breakpoint";
 @import "lib//susy/sass/susy";
+@import "components/debug";
 
 
 // Generic
@@ -19,6 +20,7 @@
 @import "typo";
 
 // Objects
+@import "content";
 
 
 // Components

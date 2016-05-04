@@ -1,43 +1,110 @@
-header {
-  &:before {
-    content: "";
-    display: block;
+.site-header__wrapper {
+  background: $site-header-bgcolor;
+}
 
-    background: white url('../images/logo-blue-transparent.png') center center no-repeat;
-    background-size: contain;
-    overflow: hidden;
-    color: white;
-    min-height: 240px;
-  }
+header[role=banner] {
 
   .site-name {
     display: none;
   }
 
-  //a, a:visited {
-  //  color: inherit;
-  //  text-decoration: none;
-  //}
+  .site-logo {
+    text-align: center;
 
-  nav.menu--main {
-    ul {
-      text-align: center;
+    @include breakpoint($tablet-l) {
+      text-align: left;
+      width: 300px;
     }
-    li.menu-item {
-      display: inline-block;
-      padding: 10px;
+
+    img {
+      width: 90%;
+      height: auto;
+      flex-basis: 100%;
+
+      @include breakpoint($tablet-l) {
+        width: 100%;
+        max-width: 290px;
+      }
+    }
+
+  }
+}
+
+.dug-twitter {
+  margin: 0;
+  a {
+    padding: 1rem;
+    // background: blue;
+    display: inline-block;
+    color: #FFF;
+
+    @include breakpoint($tablet-l) {
+      margin-left: 15rem;
+      padding: 0;
+      color: black;
+    }
+  }
+  // display: block;
+
+}
+
+nav.menu--main {
+  background: black;
+  width: 100%;
+  padding: 0 1rem;
+
+  @include breakpoint($tablet-l) {
+    width: auto;
+    padding: 0 2rem;
+  }
+
+  ul {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @include breakpoint($tablet-l) {
+      justify-content: space-between;
     }
   }
 
-  nav.menu--account {
-    position: fixed;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    background: $color-black;
-    right: 0;
-    color: white;
-    top: 200px;
-    top: .2vh;
-    padding: 5px;
+  li.menu-item {
+    // display: inline-block;
+    padding: 0;
+  }
+  a {
+    padding: 1rem 1rem;
+    white-space: nowrap;
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+
+    @include breakpoint($tablet-l) {
+      padding: 1rem;
+    }
+  }
+}
+
+nav.menu--account {
+  ul.menu {
+    text-align: right;
+  }
+  li.menu-item {
+    padding: 0;
+  }
+
+  a {
+    padding: 1rem 1rem;
+    white-space: nowrap;
+    display: inline-block;
+    // background: blue;
+    color: #FFF;
+
+    @include breakpoint($tablet-l) {
+      padding: 1rem;
+      text-decoration: none;
+    }
   }
 }
