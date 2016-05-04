@@ -1,8 +1,14 @@
 .page-content {
-  @include container();
+  // @include container();
 }
 
 
+main {
+  padding: 2rem 2rem;
+  @include breakpoint($tablet-l) {
+    padding: 4rem 1rem;
+  }
+}
 
 
 .site-header__wrapper {
@@ -65,5 +71,4 @@ header[role=banner] {
       flex-basis: 10%;
     }
   }
-
 }

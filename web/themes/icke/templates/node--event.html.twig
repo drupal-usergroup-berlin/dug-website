@@ -65,8 +65,7 @@
 #}
 {%
   set classes = [
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
+    'dug-event',
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
@@ -74,17 +73,29 @@
   ]
 %}
 
+{# 'node--type-' ~ node.bundle|clean_class,  #}
+
+
 {# attach_library('classy/node') #}
 
 <article{{ attributes.addClass(classes) }}>
 
   <header>
-    <time datetime="{{ event_date }}">
+    <time datetime="{{ event_date }}" class="event__date">
       <span class="date-weekday">{{ event_date | date("D") }}</span><span class="date-binding">, </span><span class="date-day-month">{{ event_date | date("j.n.") }}</span><span class="date-year">{{ event_date | date("Y") }}</span>
     </time>
     {{ title_prefix }}
     <h1>{{ label }}</h1>
     {{ title_suffix }}
+
+
+    {{ content.field_location }}
+    <p class="event__time">
+      Start: {{ event_date | date("H:i", "Europe/Berlin") }}
+    </p>
+
+
+
   </header>
 
   {#
@@ -97,18 +108,29 @@
   {% endif %}
   #}
 
-  <section class="event__place-and-time">
-    {{ content.field_location }}
-    <p class="event__time">
-      Start: {{ event_date | date("H:i", "Europe/Berlin") }}
-    </p>
 
-  </section>
 
   {# if content.field_minutes['#items'] #}
   <!-- <p class="event__info-label">{% trans %}Rückblick auf das Treffen:{% endtrans %}</p> -->
   {# content.field_minutes #}
   {# endif #}
+
+  <section class="event__signup">
+    <p>
+      Bist du dabei?
+    </p>
+    <p>
+      <a href="#">Flag: Ich bin dabei</a>
+    </p>
+    <p>
+      {% trans %}Folgende Leute wollen auch teilnehmen:{% endtrans %}
+    </p>
+
+
+  </section>
+
+
+
 
   <section class="event__description">
     {# if content.field_minutes['#items'] #}
@@ -121,21 +143,19 @@
   </section>
 
   <section class="event__attendees">
-    <p>
-      Bist du dabei?
-    </p>
-    <p>
-      <a href="#">Flag: Ich bin dabei</a>
-    </p>
-    <p>
-      {% trans %}Folgende Leute wollen auch teilnehmen:{% endtrans %}
-    </p>
-
     <p class="placeholder">
       Placeholder: "list of users who flagged this event"
     </p>
   </section>
 
-  {{ content.comment }}
-
 </article>
+
+
+<div class="comments-wrapper">
+  <section class="event__comments">
+    <p class="placeholder">
+      Placeholder: Kommentare
+    </p>
+    {{ content.comment }}
+  </section>
+</div>
