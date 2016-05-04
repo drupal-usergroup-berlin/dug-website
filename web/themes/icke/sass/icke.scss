@@ -1,18 +1,32 @@
-@import "lib/normalize/import-now";
-
+// Settings
 @import "grid-settings";
+@import "variables";
 
+
+// Tools
 @import "lib/sassy-maps/sass/sassy-maps";
 @import "lib//breakpoint-sass/stylesheets/breakpoint";
 @import "lib//susy/sass/susy";
 
-@import "variables";
+
+// Generic
+// @import "lib/normalize/import-now";
+@import "lib/generic.normalize";
+
+// Base
 @import "basics";
 @import "layout";
 @import "typo";
-@import "components/debug";
+
+// Objects
+
+
+// Components
+// @import "components/debug";
 @import "components/section";
 @import "components/teaser";
-
 @import "components/header";
 @import "components/footer";
+
+
+// Trumps

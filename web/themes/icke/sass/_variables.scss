@@ -1,9 +1,14 @@
+// breakpoints
+
 $mobile: 320px;
 $smartphone: 480px;
 $tablet-p: 700px;
 $tablet-l: 1000px;
 $laptop: 1200px;
 $laptop-hd: 1440px;
+
+
+// Colors
 
 $color-black: #444;
 $color-grey: #a29d9d;
@@ -13,14 +18,32 @@ $color-accent-2: #ffc40b;
 
 $link-color: $color-accent-1;
 
-$pad-default: 24px;
+$font-color-default: $color-black;
+$font-color-medium: #666;
 
-// $font-size: 62.5% !global;
+
+
+$pad-default: 24px; // ? Wofür ist diese Variable gedacht?
+
+
+
+// Font settings
+
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic");
 
 $font-sans: "Futura Sans", sans-serif;
+$font-default: sans-serif;
 $font-headline: "PT Sans Narrow", sans-serif;
 // $font-serif: 'Bitter', serif;
 // $font-round: 'Nunito', sans-serif;
 
-$font-color-default: $color-black;
-$font-color-medium: #666;
+$font-size-default: 1.8rem;
+$line-height-default: 1.4;
+
+
+// variables used in normalize settings
+$h1-font-size: 3.2rem !default;
+$h2-font-size: 2.8rem;
+$h3-font-size: 2.2rem;
+$h4-font-size: 1.8rem;
