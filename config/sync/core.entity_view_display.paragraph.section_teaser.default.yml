@@ -3,6 +3,7 @@ langcode: de
 status: true
 dependencies:
   config:
+    - field.field.paragraph.section_teaser.field_section_style
     - field.field.paragraph.section_teaser.field_section_teaser
     - paragraphs.paragraphs_type.section_teaser
 id: paragraph.section_teaser.default
@@ -20,4 +21,5 @@ content:
     type: entity_reference_entity_view
 hidden:
   created: true
+  field_section_style: true
   uid: true

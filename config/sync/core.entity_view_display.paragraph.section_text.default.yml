@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.section_text.field_section_link
+    - field.field.paragraph.section_text.field_section_style
     - field.field.paragraph.section_text.field_section_text
     - field.field.paragraph.section_text.field_section_title
     - paragraphs.paragraphs_type.section_text
@@ -41,4 +42,5 @@ content:
     type: string
 hidden:
   created: true
+  field_section_style: true
   uid: true

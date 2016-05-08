@@ -5,11 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.section_view.field_section_link
+    - field.field.paragraph.section_view.field_section_style
     - field.field.paragraph.section_view.field_section_title
     - field.field.paragraph.section_view.field_section_view
     - paragraphs.paragraphs_type.section_view
   module:
     - link
+    - options
     - viewfield
 id: paragraph.section_view.preview
 targetEntityType: paragraph
@@ -17,7 +19,7 @@ bundle: section_view
 mode: preview
 content:
   field_section_link:
-    weight: 2
+    weight: 3
     label: inline
     settings:
       trim_length: 80
@@ -27,15 +29,21 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-  field_section_title:
+  field_section_style:
+    type: list_default
     weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_section_title:
+    weight: 1
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_section_view:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }

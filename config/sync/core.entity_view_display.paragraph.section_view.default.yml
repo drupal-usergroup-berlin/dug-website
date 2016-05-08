@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.section_view.field_section_link
+    - field.field.paragraph.section_view.field_section_style
     - field.field.paragraph.section_view.field_section_title
     - field.field.paragraph.section_view.field_section_view
     - paragraphs.paragraphs_type.section_view
   module:
     - link
+    - options
     - viewfield
 id: paragraph.section_view.default
 targetEntityType: paragraph
@@ -26,6 +28,12 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+  field_section_style:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
   field_section_title:
     weight: 0
     label: hidden

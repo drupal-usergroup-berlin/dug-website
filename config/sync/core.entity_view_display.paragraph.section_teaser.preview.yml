@@ -4,15 +4,24 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.section_teaser.field_section_style
     - field.field.paragraph.section_teaser.field_section_teaser
     - paragraphs.paragraphs_type.section_teaser
+  module:
+    - options
 id: paragraph.section_teaser.preview
 targetEntityType: paragraph
 bundle: section_teaser
 mode: preview
 content:
-  field_section_teaser:
+  field_section_style:
+    type: list_default
     weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_section_teaser:
+    weight: 1
     label: hidden
     settings:
       view_mode: teaser

@@ -75,3 +75,11 @@
     }
   }
 }
+
+.section-style--green {
+  @include sketched-background(rgba(#ADFF96, .7));
+}
+
+.section-style--orange {
+  @include sketched-background(rgba(#FFD796, .47));
+}
