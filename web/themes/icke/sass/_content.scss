@@ -11,64 +11,6 @@ main {
   margin-bottom: 4rem;
 }
 
-
-
-
-.dug-event {
-  @include container;
-  position: relative;
-
-  header {}
-
-  > header {
-    @include breakpoint($tablet-l) {
-      @include span(5 of 9);
-      @include push(2);
-      // border: solid 1px #DDD;
-    }
-  }
-
-  .event__date {
-    background: $light-green;
-
-    @include breakpoint($tablet-l) {
-      position: absolute;
-      margin-left: -15rem;
-      margin-top: 3rem;
-    }
-  }
-
-
-  .event__description {
-
-    @include breakpoint($tablet-l) {
-      @include span(5 of 9);
-      @include push(2);
-      // border: solid 1px #DDD;
-
-      p, h1, h2, h3, h4 {
-        max-width: 30em;
-      }
-    }
-  }
-
-  .event__signup {
-    @include breakpoint($tablet-l) {
-      @include span(2 of 9 last);
-      // border: solid 1px #DDD;
-    }
-  }
-
-  .event__attendees {
-
-    @include breakpoint($tablet-l) {
-      @include span(2 of 9 last);
-      // border: solid 1px #DDD;
-    }
-  }
-}
-
-
 .standard-page {
 
   position: relative;
@@ -109,7 +51,7 @@ main {
 
 
       .teaser {
-        border: solid 10px $light-green;
+        border: solid 10px $color-light-green;
         padding: 2rem;
 
         @include breakpoint($tablet-l) {

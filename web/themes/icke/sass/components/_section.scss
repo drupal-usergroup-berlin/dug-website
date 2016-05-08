@@ -77,7 +77,7 @@
 }
 
 .section-style--green {
-  @include sketched-background(rgba(#ADFF96, .7));
+  @include sketched-background(rgba($color-light-green, .7));
 }
 
 .section-style--orange {
