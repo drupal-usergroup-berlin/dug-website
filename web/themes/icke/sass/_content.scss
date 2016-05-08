@@ -1,3 +1,49 @@
+/**
+ * Uniform background with sketchy/broken upper and lower edge.
+ *
+ * Requires full ownership of the following properties:
+ * - background-color
+ * - border-top
+ * - border-bottom
+ * - background-clip
+ *
+ * Requires full ownership of the following selectors:
+ * - ::before
+ * - ::after
+ */
+@mixin sketched-background($color) {
+  $height: 1.5rem;
+  border-top: $height solid transparent;
+  border-bottom: $height solid transparent;
+  background-clip: padding-box;
+
+  &, &::before, &::after {
+    background-color: $color;
+  }
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    left: 0;
+    height: 1.5rem;
+  }
+  &::before {
+    bottom: 100%;
+    -webkit-clip-path: polygon(71% 100%, 100% 61%, 100% 100%, 0 100%, 0 56%, 71% 0);
+    clip-path: polygon(71% 100%, 100% 61%, 100% 100%, 0 100%, 0 56%, 71% 0);
+  }
+  &::after {
+    top: 100%;
+    -webkit-clip-path: polygon(100% 0, 100% 50%, 40% 76%, 26% 100%, 21% 29%, 0 50%, 0 0);
+    clip-path: polygon(100% 0, 100% 50%, 40% 76%, 26% 100%, 21% 29%, 0 50%, 0 0);
+  }
+}
+
+main {
+  background: white url("../images/bg_beton.jpg") center top repeat;
+}
+
 .event__info-label {
   @extend h2;
 }
@@ -118,6 +164,7 @@
   }
 
   .section-type--text {
+    @include sketched-background(rgba($light-green, .5));
     padding: 2rem 2rem;
 
     @include breakpoint($tablet-l) {
