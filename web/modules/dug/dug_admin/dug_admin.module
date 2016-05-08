@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function dug_admin_preprocess_node(&$vars) {
+  /** @var \Drupal\node\Entity\Node $node */
+  $node = $vars['node'];
+
+  // Contextual links overlay the actions button on a paragraphs field form in
+  // "preview" mode. Disable contextual links for nodes of type section_teaser
+  // when displayed in "teaser" view mode (which should be exclusive to the
+  // paragraphs preview).
+  if ($node->getType() === 'section_teaser' && $vars['view_mode'] === 'teaser') {
+    $classes = &$vars['attributes']['class'];
+    if ($classes && ($contextual = array_search('contextual-region', $classes)) !== FALSE) {
+      unset($classes[$contextual]);
+    }
+  }
+}

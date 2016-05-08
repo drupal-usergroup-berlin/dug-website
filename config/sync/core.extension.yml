@@ -12,6 +12,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  dug_admin: 0
   dug_migrate: 0
   dynamic_page_cache: 0
   editor: 0
