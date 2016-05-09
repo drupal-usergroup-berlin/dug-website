@@ -77,9 +77,9 @@
 }
 
 .section-style--green {
-  @include sketched-background(rgba($color-light-green, .7));
+  @include section-border("../images/section-border-green.svg", $color-light-green, .7);
 }
 
 .section-style--orange {
-  @include sketched-background(rgba(#FFD796, .47));
+  @include section-border("../images/section-border-orange.svg", #FFD796, .47);
 }
