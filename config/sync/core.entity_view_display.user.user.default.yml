@@ -28,8 +28,8 @@ bundle: user
 mode: default
 content:
   field_comment_notification:
-    weight: 9
-    label: above
+    weight: 10
+    label: visually_hidden
     settings:
       format: default
       format_custom_false: ''
@@ -37,8 +37,8 @@ content:
     third_party_settings: {  }
     type: boolean
   field_drupal_org:
-    weight: 16
-    label: above
+    weight: 6
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -48,8 +48,8 @@ content:
     third_party_settings: {  }
     type: link
   field_event_notification:
-    weight: 10
-    label: above
+    weight: 11
+    label: visually_hidden
     settings:
       format: default
       format_custom_false: ''
@@ -57,55 +57,57 @@ content:
     third_party_settings: {  }
     type: boolean
   field_facebook:
-    weight: 13
-    label: above
+    weight: 7
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_first_name:
-    weight: 6
-    label: above
+    weight: 1
+    label: visually_hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_job_status:
-    weight: 8
-    label: above
+    weight: 4
+    label: visually_hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_last_name:
-    weight: 7
-    label: above
+    weight: 2
+    label: visually_hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_skills:
-    weight: 15
-    label: above
+    weight: 5
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_twitter:
-    weight: 11
-    label: above
+    weight: 8
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_xing:
-    weight: 12
-    label: above
+    weight: 9
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   member_for:
-    weight: 5
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image
     weight: 0
