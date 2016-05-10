@@ -3,9 +3,7 @@ langcode: de
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_comment_notification
     - field.field.user.user.field_drupal_org
-    - field.field.user.user.field_event_notification
     - field.field.user.user.field_facebook
     - field.field.user.user.field_first_name
     - field.field.user.user.field_job_status
@@ -27,15 +25,6 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_comment_notification:
-    weight: 10
-    label: visually_hidden
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
   field_drupal_org:
     weight: 6
     label: inline
@@ -47,15 +36,6 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-  field_event_notification:
-    weight: 11
-    label: visually_hidden
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
   field_facebook:
     weight: 7
     label: inline

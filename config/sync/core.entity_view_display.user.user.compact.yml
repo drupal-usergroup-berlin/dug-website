@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
-    - field.field.user.user.field_comment_notification
     - field.field.user.user.field_drupal_org
-    - field.field.user.user.field_event_notification
     - field.field.user.user.field_facebook
     - field.field.user.user.field_first_name
     - field.field.user.user.field_job_status
@@ -49,9 +47,7 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
-  field_comment_notification: true
   field_drupal_org: true
-  field_event_notification: true
   field_facebook: true
   field_job_status: true
   field_skills: true
