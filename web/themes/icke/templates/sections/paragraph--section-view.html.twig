@@ -2,11 +2,14 @@
   set classes = [
     'section',
     'section-type--view',
-    content.field_section_link ? 'section--has-link'
+    content.field_section_link ? 'section--has-link',
+    section_style ? 'section-style--' ~ section_style|clean_class,
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {{ content.field_section_title }}
-  {{ content.field_section_view }}
-  {{ content.field_section_link }}
+  <section>
+    {{ content.field_section_title }}
+    {{ content.field_section_view }}
+    {{ content.field_section_link }}
+  </section>
 </div>

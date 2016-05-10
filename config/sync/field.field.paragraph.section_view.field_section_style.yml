@@ -1,0 +1,21 @@
+uuid: b9b4532e-6bb1-4077-b43b-cdd07bc29633
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_style
+    - paragraphs.paragraphs_type.section_view
+  module:
+    - options
+id: paragraph.section_view.field_section_style
+field_name: field_section_style
+entity_type: paragraph
+bundle: section_view
+label: Stil
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

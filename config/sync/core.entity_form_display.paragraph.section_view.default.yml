@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.section_view.field_section_link
+    - field.field.paragraph.section_view.field_section_style
     - field.field.paragraph.section_view.field_section_title
     - field.field.paragraph.section_view.field_section_view
     - paragraphs.paragraphs_type.section_view
@@ -16,21 +17,26 @@ bundle: section_view
 mode: default
 content:
   field_section_link:
-    weight: 2
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
-  field_section_title:
+  field_section_style:
     weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_section_title:
+    weight: 1
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
   field_section_view:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: viewfield_select

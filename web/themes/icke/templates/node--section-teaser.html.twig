@@ -1,0 +1,14 @@
+{%
+  set classes = [
+    'teaser',
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+  {{ content.field_section_title }}
+  {{ content.field_section_text }}
+  {{ content.field_section_link }}
+</article>

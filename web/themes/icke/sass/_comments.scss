@@ -1,0 +1,12 @@
+.comments-wrapper {
+  @include container();
+}
+
+.event__comments {
+
+  @include breakpoint($tablet-l) {
+    @include span(5 of 9);
+    @include push(2);
+    // border: solid 1px #DDD;
+  }
+}

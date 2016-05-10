@@ -23,3 +23,27 @@ function icke_preprocess_node__event__teaser(&$vars) {
 
   // @todo Display excerpt from field_minutes for past events.
 }
+
+function icke_preprocess_node(array &$variables) {
+  $request = \Drupal::request();
+  $node = $request->attributes->get('node');
+  $type = $node->getType();
+
+  if ($type == 'event') {
+    $variables['event_date'] = $node->get('field_date')->value;
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function icke_preprocess_paragraph(&$vars) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $entity */
+  $entity = $vars['paragraph'];
+  if($entity->hasField('field_section_style')) {
+    if($item = $entity->get('field_section_style')->get(0)) {
+      $style = $item->getValue();
+      $vars['section_style'] = $style['value'];
+    }
+  }
+}

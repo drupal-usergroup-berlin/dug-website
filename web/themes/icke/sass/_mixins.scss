@@ -9,3 +9,52 @@
 .clearfix {
   @include clearfix();
 }
+
+/**
+ * Uniform background with svg/image shape border.
+ * Svg/image is expected to contain the top sprite in the upper half and the
+ * bottom sprite in the lower half.
+ * Alpha/opacity will be applied to sprites as well as the background color.
+ *
+ * Requires full ownership of the following properties:
+ * - background-color
+ * - border-top
+ * - border-bottom
+ * - background-clip
+ *
+ * Requires full ownership of the following selectors:
+ * - ::before
+ * - ::after
+ */
+@mixin section-border($svg, $bg-color, $alpha) {
+
+  $height: 1.5rem;
+  border-top: $height solid transparent;
+  border-bottom: $height solid transparent;
+  background-clip: padding-box;
+
+  &, &::before, &::after {
+    background-color: rgba($bg-color, $alpha);
+  }
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    left: 0;
+    height: 1.5rem;
+    background-size: 100% 200%;
+    opacity: $alpha;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url($svg);
+  }
+  &::before {
+    bottom: 100%;
+    background-position: left top;
+  }
+  &::after {
+    top: 100%;
+    background-position: left bottom;
+  }
+}

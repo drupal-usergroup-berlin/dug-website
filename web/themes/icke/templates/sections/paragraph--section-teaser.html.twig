@@ -1,4 +1,13 @@
-{#
-  Wrapping markup provided by node--section-teaser.html.twig
-#}
-{{ content.field_section_teaser }}
+{%
+  set classes = [
+    'section',
+    'section-type--teaser',
+    section_style ? 'section-style--' ~ section_style|clean_class,
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  <section>
+    {{ content.field_section_teaser }}
+  </section>
+</div>

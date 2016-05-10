@@ -44,14 +44,21 @@
  */
 #}
 
-<header role="banner">
-  {{ page.header }}
-</header>
+<div class="site-header__wrapper">
+  <header role="banner">
+    <p class="dug-twitter">
+      <a href="https://twitter.com/hashtag/dug_berlin">#dug_berlin</a>
+    </p>
 
+    <a href="{{ base_path }}" class="site-logo"><img src="{{ base_path }}themes/icke/images/dug-logo-2016.svg" alt="Logo der Drupal User Group Berlin" /></a>
+
+    {{ page.header }}
+  </header>
+</div>
 
 {{ page.help }}
 
-<main role="main">
+<main>
   <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
   <section class="page-content">

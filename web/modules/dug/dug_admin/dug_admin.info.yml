@@ -1,0 +1,5 @@
+name: 'DUG Admin'
+type: module
+description: 'Admin improvements and integration fixes.'
+package: DUG
+core: '8.x'

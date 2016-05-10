@@ -10,13 +10,49 @@
   }
 }
 
+html {
+  font-size: 62.5%;
+  line-height: $line-height-default;
+}
+
 body {
-  font: 16px/1.5 "Helvetica Neue",helvetica,Arial,sans-serif;
+  font-family: $font-default; // 16px/1.5 "Helvetica Neue",helvetica,Arial,sans-serif;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  color: $font-color-default;
+
+  @include breakpoint($tablet-p) {}
 }
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
+  // font-weight: 700;
+  font-family: $font-headline;
+
+}
+
+h1 {
+  font-size: $h1-font-size;
+  letter-spacing: $headline-letter-spacing;
+}
+h2 {
+  font-size: $h2-font-size;
+  letter-spacing: $headline-letter-spacing;
+}
+h3 {
+  font-size: $h3-font-size;
+}
+h4 {
+  font-size: $h4-font-size;
+}
+
+strong, b {
   font-weight: 700;
 }
-h1, h2 {
-  font-size: 36px;
+
+p {
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
