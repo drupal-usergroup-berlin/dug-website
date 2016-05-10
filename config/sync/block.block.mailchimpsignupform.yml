@@ -1,0 +1,25 @@
+uuid: 7d7f20e9-7421-49df-af50-02dc1b1cac4e
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:78a8135b-ec15-4469-af2b-5dea58816524'
+  module:
+    - block_content
+  theme:
+    - icke
+id: mailchimpsignupform
+theme: icke
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:78a8135b-ec15-4469-af2b-5dea58816524'
+settings:
+  id: 'block_content:78a8135b-ec15-4469-af2b-5dea58816524'
+  label: 'MailChimp Signup Form'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
