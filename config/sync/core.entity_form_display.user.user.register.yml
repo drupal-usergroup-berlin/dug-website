@@ -1,0 +1,71 @@
+uuid: dcdafa2d-1196-4a99-82d5-4ec1128fb67c
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.field_comment_notification
+    - field.field.user.user.field_drupal_org
+    - field.field.user.user.field_event_notification
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_job_status
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_skills
+    - field.field.user.user.field_twitter
+    - field.field.user.user.field_xing
+    - field.field.user.user.user_picture
+  module:
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_social_networks:
+      children: {  }
+      parent_name: ''
+      weight: 3
+      label: 'Social Networks'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: true
+_core:
+  default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_first_name:
+    weight: 0
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_last_name:
+    weight: 1
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  contact: true
+  field_comment_notification: true
+  field_drupal_org: true
+  field_event_notification: true
+  field_facebook: true
+  field_job_status: true
+  field_skills: true
+  field_twitter: true
+  field_xing: true
+  language: true
+  timezone: true
+  user_picture: true

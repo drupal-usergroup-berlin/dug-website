@@ -24,10 +24,10 @@ third_party_settings:
   field_group:
     group_social_networks:
       children:
-        - field_drupal_org
         - field_facebook
         - field_twitter
         - field_xing
+        - field_drupal_org
       parent_name: ''
       weight: 14
       label: 'Social Networks'
