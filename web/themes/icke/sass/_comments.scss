@@ -3,10 +3,30 @@
 }
 
 .event__comments {
+  padding: 0 2rem;
 
   @include breakpoint($tablet-l) {
     @include span(5 of 9);
     @include push(2);
-    // border: solid 1px #DDD;
+
+    padding: 0;
+  }
+
+  .comment {
+    background-color: rgba(221, 221, 221, 0.5);
+    border: 1px solid #DDD;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    .comment__author {
+      font-weight: bold;
+    }
+    .profile {
+      float:left;
+      padding-right: 1rem;
+    }
+    .comment__meta {
+      @include clearfix;
+    }
   }
 }
