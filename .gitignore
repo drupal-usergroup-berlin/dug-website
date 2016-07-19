@@ -14,10 +14,12 @@ web/sites/default/files
 
 web/sites/default/settings.local.php
 config/migrate
-.DS_Store
 web/themes/icke/config.codekit
 web/themes/icke/node_modules
 web/themes/icke/css/icke.css
 
+drush/aliases.drushrc.php
+
 # Ignore sql files that might be stored locally
+.DS_Store
 *.sql
