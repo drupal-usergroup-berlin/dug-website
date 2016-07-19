@@ -120,12 +120,13 @@
       Bist du dabei?
     </p>
     <p>
-      <a href="#">Flag: Ich bin dabei</a>
+      <!-- <a href="#">Flag: Ich bin dabei</a> -->
+      {{ content.flag_signup }}
     </p>
     <p>
       {% trans %}Folgende Leute wollen auch teilnehmen:{% endtrans %}
     </p>
-
+    {{ event_signups }}
 
   </section>
 

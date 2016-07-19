@@ -31,6 +31,14 @@ function icke_preprocess_node(array &$variables) {
 
   if ($type == 'event') {
     $variables['event_date'] = $node->get('field_date')->value;
+    $variables['event_signups'] = [
+      '#type' => 'view',
+      '#name' => 'event_signups',
+      '#display_id' => 'embed_1',
+      '#arguments' => [
+        $node->id()
+      ]
+    ];
   }
 }
 
