@@ -9,7 +9,7 @@
 .form-login {
   @include container;
   position: relative;
-  margin: 0 2rem 4rem 4rem;
+  margin: 0 2rem 4rem 2rem;
 
   @include breakpoint($tablet-l) {
     margin: 0 auto 8rem auto;
@@ -24,7 +24,7 @@
   padding: 2rem;
 
   background: #FFF;
-  border: solid 1px #666;
+  border: solid 2px $border-color-light;
 
   @include breakpoint($tablet-l) {
     max-width: 60%;
