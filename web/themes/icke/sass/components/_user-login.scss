@@ -1,0 +1,63 @@
+/**
+ * User Register Form
+ * template_ form--user-login-form.html.twig
+ **/
+
+
+.block-local-tasks-block {}
+
+.form-login {
+  @include container;
+  position: relative;
+  margin: 0 2rem 4rem 4rem;
+
+  @include breakpoint($tablet-l) {
+    margin: 0 auto 8rem auto;
+  }
+}
+
+.form-login__container {
+  color: $font-color-medium;
+  text-align: center;
+
+  width: 100%;
+  padding: 2rem;
+
+  background: #FFF;
+  border: solid 1px #666;
+
+  @include breakpoint($tablet-l) {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.form-login__name,
+.form-login__pass,
+.form-login__actions {
+  label {
+    display: block;
+    color: $font-color-default;
+    // color: ;
+  }
+
+  input[type=text],
+  input[type=password] {
+    display: block;
+    color: $input-color-default;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.form-login__name {}
+
+.form-login__pass {}
+
+.form-login__actions {
+  .edit-submit {
+    @extend .button;
+  }
+}
