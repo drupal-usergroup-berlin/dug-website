@@ -18,6 +18,7 @@
 %}
 <form{{ attributes.addClass(classes) }}>
   <div class="form-user-pass__container">
+    <h1 class="form-title">{{ trans }}Passwort vergessen?{{ endtrans }}</h1>
   {% for key, child in element if key|first != '#' %}
 
     {% if (child['#markup'] != "") %}

@@ -27,14 +27,28 @@ third_party_settings:
         - field_xing
         - field_drupal_org
       parent_name: ''
-      weight: 14
-      label: 'Social Networks'
+      weight: 7
+      label: 'weitere Profile'
       format_type: fieldset
       format_settings:
-        description: ''
-        classes: ''
-        id: ''
+        label: 'weitere Profile'
         required_fields: true
+        id: ''
+        classes: ''
+    group_account:
+      children:
+        - account
+      parent_name: ''
+      weight: 3
+      label: Account
+      format_type: tab
+      format_settings:
+        label: Account
+        formatter: open
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
 _core:
   default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
 id: user.user.default
@@ -43,11 +57,11 @@ bundle: user
 mode: default
 content:
   account:
-    weight: 0
+    weight: 4
     settings: {  }
     third_party_settings: {  }
   contact:
-    weight: 3
+    weight: 8
     settings: {  }
     third_party_settings: {  }
   field_drupal_org:
@@ -65,32 +79,32 @@ content:
     third_party_settings: {  }
     type: string_textfield
   field_first_name:
-    weight: 5
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
   field_job_status:
-    weight: 7
+    weight: 5
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
   field_last_name:
-    weight: 6
+    weight: 1
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
   field_skills:
-    weight: 17
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
   field_twitter:
     weight: 15
     settings:
@@ -105,19 +119,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-  language:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-  timezone:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: 1
-hidden: {  }
+    weight: 2
+hidden:
+  language: true
+  timezone: true

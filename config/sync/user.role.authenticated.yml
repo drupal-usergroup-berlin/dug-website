@@ -20,3 +20,4 @@ permissions:
   - 'flag signup'
   - 'unflag signup'
   - 'access user contact forms'
+  - 'change own username'
