@@ -1,0 +1,21 @@
+uuid: 9b7a7194-556d-439e-8c39-a4b35272fbfa
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_message
+    - node.type.talk
+  module:
+    - text
+id: node.talk.field_message
+field_name: field_message
+entity_type: node
+bundle: talk
+label: Nachricht
+description: 'Dieser Text ist nur für das Orga-Team sichtbar.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

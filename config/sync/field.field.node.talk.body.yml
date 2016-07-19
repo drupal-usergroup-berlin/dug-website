@@ -11,7 +11,7 @@ id: node.talk.body
 field_name: body
 entity_type: node
 bundle: talk
-label: Body
+label: Talk-Beschreibung
 description: ''
 required: false
 translatable: true

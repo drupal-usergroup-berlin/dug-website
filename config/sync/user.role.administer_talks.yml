@@ -1,0 +1,20 @@
+uuid: 1ca09e8a-2a11-47b2-a049-195c338a69e0
+langcode: de
+status: true
+dependencies: {  }
+id: administer_talks
+label: 'Talks verwalten'
+weight: -8
+is_admin: null
+permissions:
+  - 'create field_done'
+  - 'edit own field_done'
+  - 'edit field_done'
+  - 'view own field_done'
+  - 'view field_done'
+  - 'delete any talk content'
+  - 'delete own talk content'
+  - 'delete talk revisions'
+  - 'edit any talk content'
+  - 'revert talk revisions'
+  - 'view talk revisions'

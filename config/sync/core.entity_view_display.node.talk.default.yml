@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.talk.field_difficulty
     - field.field.node.talk.field_done
     - field.field.node.talk.field_duration
+    - field.field.node.talk.field_message
     - field.field.node.talk.field_slides
     - field.field.node.talk.field_slides_link
     - field.field.node.talk.field_tags
@@ -67,6 +68,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+  field_message:
+    weight: 112
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
   field_slides:
     weight: 110
     label: above

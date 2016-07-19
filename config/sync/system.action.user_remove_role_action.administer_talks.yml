@@ -1,0 +1,14 @@
+uuid: 39f60d28-d9b3-4177-bb61-f1a2d72a532f
+langcode: de
+status: true
+dependencies:
+  config:
+    - user.role.administer_talks
+  module:
+    - user
+id: user_remove_role_action.administer_talks
+label: 'Remove the Talks verwalten role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administer_talks

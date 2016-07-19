@@ -18,3 +18,14 @@ function dug_admin_preprocess_node(&$vars) {
     }
   }
 }
+
+/**
+ * Implement hook_node_presave().
+ *
+ * @param \Drupal\node\NodeInterface $node
+ */
+function dug_admin_node_presave(\Drupal\node\NodeInterface $node) {
+  if ($node->bundle() == 'talk' && !$node->get('field_done')->isEmpty()) {
+    $node->field_done->value = (int) $node->get('field_done')->value;
+  }
+}

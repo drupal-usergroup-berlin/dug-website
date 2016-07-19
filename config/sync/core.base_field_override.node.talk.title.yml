@@ -1,0 +1,18 @@
+uuid: cdf62ac4-82b1-463a-90f1-6cbd12611198
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.talk
+id: node.talk.title
+field_name: title
+entity_type: node
+bundle: talk
+label: 'Titel des Talks'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

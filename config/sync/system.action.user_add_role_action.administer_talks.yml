@@ -1,0 +1,14 @@
+uuid: ca2e180a-49c5-48cd-ab1c-3cb43323f997
+langcode: de
+status: true
+dependencies:
+  config:
+    - user.role.administer_talks
+  module:
+    - user
+id: user_add_role_action.administer_talks
+label: 'Add the Talks verwalten role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administer_talks

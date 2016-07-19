@@ -1,0 +1,22 @@
+uuid: e417cae6-d4ac-4904-917e-3295770dfb7a
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.talk
+id: node.talk.status
+field_name: status
+entity_type: node
+bundle: talk
+label: Veröffentlichungsstatus
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean
