@@ -23,3 +23,4 @@ permissions:
   - 'create talk content'
   - 'edit own talk content'
   - 'view own unpublished content'
+  - 'change own username'

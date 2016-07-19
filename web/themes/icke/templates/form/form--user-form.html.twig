@@ -13,24 +13,21 @@
 
 {%
   set classes = [
-    'form-user-register',
+    'form-user-form',
   ]
 %}
-<section>
-
 <form{{ attributes.addClass(classes) }}>
-  <div class="form-user-register__container">
+  <div class="form-user-form__container">
 
-    <h1 class="form-title">{{ trans }}Neuen Account erstellen{{ endtrans }}</h1>
+    <h1 class="form-title">{{ trans }}Edit your profile{{ endtrans }}</h1>
 
     {% for key, child in element if key|first != '#' %}
 
       {% if (child['#markup'] != "") %}
         {% set elementClass = key|clean_class %}
-        <p class="{{ 'form-user-register__' ~ elementClass }}">{{ child }}</p>
+        <p class="{{ 'form-user-form__' ~ elementClass }}">{{ child }}</p>
       {% endif %}
 
     {% endfor %}
   </div>
 </form>
-</section>

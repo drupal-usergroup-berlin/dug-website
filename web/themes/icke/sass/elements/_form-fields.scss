@@ -2,10 +2,34 @@
  * Form Fields
  **/
 
-input {
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=phone],
+textarea,
+select {
   border: solid 1px $field-border-color;
   padding: .5rem;
   line-height: 1;
   font-size: 1.8rem;
   font-family: $font-default;
+}
+
+input[type=file] {
+  border: solid 1px $field-border-color;
+}
+
+// select {}
+
+
+.description {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: $font-color-medium;
+  display: block;
+}
+
+label {
+  display: block;
+  color: $font-color-default;
 }

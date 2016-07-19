@@ -4,7 +4,7 @@
  **/
 
 
-.form-user-register {
+.form-user-form {
   @include container;
   position: relative;
   margin: 0 2rem 4rem 2rem;
@@ -14,24 +14,26 @@
   }
 }
 
-.form-user-register__container {
+.form-user-form__container {
   color: $font-color-medium;
 
   width: 100%;
   padding: 0 2rem 4rem 2rem;
 
-  background: #FFF;
+  background: #fff;
   border: solid 2px $border-color-light;
 
   @include breakpoint($tablet-l) {
+    // max-width: 70%;
     @include span(7 of 9);
     @include push(1);
+    // margin: 0 auto;
   }
 }
 
-.form-user-register__field-first-name,
-.form-user-register__field-last-name,
-.form-user-register__account,
+.form-user-form__field-first-name,
+.form-user-form__field-last-name,
+.form-user-form__account,
  {
   label {
     display: block;
@@ -49,7 +51,7 @@
   }
 }
 
-.form-user-register__account {
+.form-user-form__account {
   label {
     &:nth-of-type(1n+2) {
       margin-top: 2rem;
@@ -58,7 +60,7 @@
 }
 
 
-.form-user-register__actions {
+.form-user-form__actions {
   .edit-submit {
     @extend .button;
   }

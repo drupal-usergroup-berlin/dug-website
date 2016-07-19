@@ -18,6 +18,8 @@
 %}
 <form{{ attributes.addClass(classes) }}>
   <div class="form-login__container">
+
+    <h1 class="form-title">{{ trans }}Login{{ endtrans }}</h1>
   {% for key, child in element if key|first != '#' %}
 
     {% if (child['#markup'] != "") %}
