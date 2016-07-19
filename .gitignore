@@ -21,3 +21,4 @@ web/themes/icke/css/icke.css
 
 # Ignore sql files that might be stored locally
 *.sql
+/_dumps
