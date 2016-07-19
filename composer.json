@@ -22,8 +22,6 @@
         "drush/drush": "~8.0",
         "drupal/console": "~1.0",
         "drupal/address": "8.1.x-dev",
-        "drupal/migrate_tools": "~8.1.0",
-        "drupal/migrate_upgrade": "~8.1.0",
         "drupal/field_group": "8.1.x",
         "drupal/flag": "8.4.x-dev",
         "drupal/paragraphs": "dev-8.x-1.x#020df39",
