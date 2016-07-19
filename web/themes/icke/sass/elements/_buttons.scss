@@ -1,0 +1,11 @@
+/**
+ * Button Styles
+ **/
+
+button,
+.button {
+  background: $link-color;
+  border: solid 1px $link-color;
+  color: $font-color-button;
+  padding: 1rem 2rem;
+}

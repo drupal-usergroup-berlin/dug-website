@@ -1,0 +1,11 @@
+/**
+ * Form Fields
+ **/
+
+input {
+  border: solid 1px $field-border-color;
+  padding: .5rem;
+  line-height: 1;
+  font-size: 1.8rem;
+  font-family: $font-default;
+}
