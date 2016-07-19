@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+
+{%
+  set classes = [
+    'form-user-pass',
+  ]
+%}
+<form{{ attributes.addClass(classes) }}>
+  <div class="form-user-pass__container">
+  {% for key, child in element if key|first != '#' %}
+
+    {% if (child['#markup'] != "") %}
+      {% set elementClass = key|clean_class %}
+      <p class="{{ 'form-user-pass__' ~ elementClass }}">{{ child }}</p>
+    {% endif %}
+
+  {% endfor %}
+
+  </div>
+</form>

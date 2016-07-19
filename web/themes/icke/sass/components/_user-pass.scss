@@ -1,0 +1,53 @@
+/**
+ * Password reset form
+ * template_ form--user-pass.html.twig
+ **/
+
+
+.form-user-pass {
+  @include container;
+  position: relative;
+  margin: 0 2rem 4rem 4rem;
+
+  @include breakpoint($tablet-l) {
+    margin: 0 auto 8rem auto;
+  }
+}
+
+.form-user-pass__container {
+  color: $font-color-medium;
+  text-align: center;
+
+  width: 100%;
+  padding: 2rem;
+
+  background: #FFF;
+  border: solid 1px #666;
+
+  @include breakpoint($tablet-l) {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.form-user-pass__name {
+  label {
+    display: block;
+    color: $font-color-default;
+  }
+
+  input[type=text] {
+    display: block;
+    color: $input-color-default;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.form-user-pass__actions {
+  .edit-submit {
+    @extend .button;
+  }
+}
