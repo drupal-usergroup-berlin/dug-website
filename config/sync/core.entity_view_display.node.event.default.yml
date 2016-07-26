@@ -14,7 +14,7 @@ dependencies:
   module:
     - address
     - comment
-    - datetime
+    - date_combo
     - text
     - user
 id: node.event.default
@@ -42,7 +42,7 @@ content:
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
-    type: datetime_default
+    type: date_combo_default
   field_location:
     weight: 4
     label: above
@@ -70,6 +70,8 @@ content:
     type: entity_reference_label
   flag_signup:
     weight: 10
+    settings: {  }
+    third_party_settings: {  }
   links:
     weight: 0
     settings: {  }
