@@ -68,8 +68,19 @@ function icke_theme_suggestions_form_alter(array &$suggestions, array $variables
  * Extracting user information for simpler display on user profile page
  */
 function icke_preprocess_user(array &$variables) {
-  $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
 
+  // get the UID of the current user
+  $current_user = \Drupal::currentUser();
+  $current_users_uid = $current_user->id();
+  $variables['current_users_uid'] = $current_users_uid;
+
+  // get user object from a user page
+  $the_uid = \Drupal::routeMatch()->getRawParameter('user');
+  // Loading the user
+  $user = \Drupal\user\Entity\User::load($the_uid);
+  // $the_uid = intval($the_uid);
+
+  $variables['user_id'] = $user->id();
   $variables['user_firstname'] = $user->get('field_first_name')->value;
   $variables['user_lastname'] = $user->get('field_last_name')->value;
   $variables['user_job_status'] = $user->get('field_job_status')->value;
@@ -82,4 +93,5 @@ function icke_preprocess_user(array &$variables) {
   $variables['user_xing'] = $user->get('field_xing')->value;
   $variables['user_drupal_org'] = $user->get('field_drupal_org')->value;
   $variables['user_skills'] = $user->get('field_skills')->value;
+  $variables['user_picture'] = $user->get('user_picture')->value;
 }

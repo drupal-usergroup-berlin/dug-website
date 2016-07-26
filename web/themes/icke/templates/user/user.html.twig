@@ -26,39 +26,80 @@
     {# content.field_last_name #}
     {# content.field_job_status #}
 
-    <h1>Hi {{ user_firstname }}</h1>
+    {% if current_users_uid == user_id %}
+      <h1 class="user__greeting">Hi {{ user_firstname }}</h1>
 
-    <p>
-      {% trans %}
-        Du bist angemeldet als <em>{{ user_name }}</em>
-      {% endtrans %}
-    </p>
-    <p>
-      {% trans %}
-        Du bist Mitglied seit {% endtrans %} <em>{{ user_created | date("d F Y") }}</em>
-    </p>
-    <p>
-      {% trans %}
-        Dein letzter Login war am {% endtrans %} <em>{{ user_login | date("d F Y, H:m") }}</em>
-    </p>
-    <p>
-      Job-Status: {{ user_job_status }}
-    </p>
-    <p>
-      facebook: {{ user_facebook }}
-    </p>
-    <p>
-      twitter: {{ user_twitter }}
-    </p>
-    <p>
-      Xing: {{ user_xing }}
-    </p>
-    <p>
-      drupal.org ID: {{ user_drupal_org }}
-    </p>
-    <p>
-      Skills: {{ user_skills }}
-    </p>
+      <section class="user__details">
+
+
+        <p>
+          {% trans %}
+            Du bist angemeldet als <em>{{ user_name }}</em>
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Du bist Mitglied seit {% endtrans %} <em>{{ user_created | date("d F Y") }}</em>
+        </p>
+        <p>
+          {% trans %}
+            Dein letzter Login war am {% endtrans %} <em>{{ user_login | date("d F Y, H:m") }}</em>
+        </p>
+        <p>
+          Job-Status: {{ user_job_status }}
+        </p>
+
+      </section>
+
+    {% else %}
+
+
+      <section class="user__picture">
+        {{ content.user_picture }}
+      </section>
+
+      <section class="user__name">
+        <h1 class="user__title">{{ user_firstname }} {{ user_lastname }}</h1>
+        <p class="user__username"><em>{{ user_name }}</em></p>
+      </section>
+
+
+      <section class="user__details">
+        <p>
+          {% trans %}
+            Mitglied seit {% endtrans %} <em>{{ user_created | date("d F Y") }}</em>
+        </p>
+        <p>
+          Job-Status: {{ user_job_status }}
+        </p>
+      </section>
+
+    {% endif %}
+
+
+
+
+    <section class="user__online-profiles">
+      <p>
+        facebook: {{ user_facebook }}
+      </p>
+      <p>
+        twitter: {{ user_twitter }}
+      </p>
+      <p>
+        Xing: {{ user_xing }}
+      </p>
+      <p>
+        drupal.org ID: {{ user_drupal_org }}
+      </p>
+    </section>
+
+    <section class="user__skills">
+      <p>
+        Skills: {{ user_skills }}
+      </p>
+    </section>
+
 
   {% endif %}
 </article>

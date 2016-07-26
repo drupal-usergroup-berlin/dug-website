@@ -4,6 +4,7 @@
 
 .user-information {
   @include container;
+  @include clearfix();
   margin: 0 2rem 4rem 2rem;
 
   @include breakpoint($tablet-l) {
@@ -12,6 +13,40 @@
 }
 
 .user-profile {
-  @include span(5 of 9);
-  @include push(2);
+
+
+  header {
+  }
+}
+
+.user__picture {
+  @include breakpoint($tablet-p) {
+    @include span(1 of 9 first);
+    @include push(1);
+  }
+}
+
+.user__name {
+  margin-bottom: 2rem;
+  @include breakpoint($tablet-p) {
+    @include span(5 of 9);
+  }
+}
+
+.user__skills,
+.user__details,
+.user__online-profiles,
+.user__greeting {
+  @include breakpoint($tablet-p) {
+    @include span(5 of 9);
+    @include push(2);
+  }
+}
+
+.user__username {
+  font-size: 3rem;
+  margin: 0;
+}
+.user__title {
+  margin: 0 0 0 0;
 }
