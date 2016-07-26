@@ -27,7 +27,8 @@
         "drupal/paragraphs": "dev-8.x-1.x#020df39",
         "drupal/viewfield": "dev-8.x-2.x#ccb7042",
         "drupal/views_infinite_scroll": "^8.1",
-        "drupal/field_permissions": "8.1.x-dev"
+        "drupal/field_permissions": "8.1.x-dev",
+        "drupal/honeypot": "^8.1"
     },
     "require-dev": {
         "behat/mink": "~1.7",
