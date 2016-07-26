@@ -11,8 +11,11 @@
         {
             "type": "vcs",
             "url": "https://github.com/derhasi/viewfield.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ueberbit/date_combo.git"
         }
-
     ],
     "require": {
         "composer/installers": "^1.0.20",
@@ -29,7 +32,8 @@
         "drupal/views_infinite_scroll": "^8.1",
         "drupal/field_permissions": "8.1.x-dev",
         "drupal/honeypot": "^8.1",
-        "drupal/allowed_formats": "^8.1"
+        "drupal/allowed_formats": "^8.1",
+        "drupal/date_combo": "dev-8.x-2.x"
     },
     "require-dev": {
         "behat/mink": "~1.7",
