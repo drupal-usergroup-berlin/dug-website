@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.talk.field_difficulty
     - field.field.node.talk.field_done
     - field.field.node.talk.field_duration
+    - field.field.node.talk.field_message
     - field.field.node.talk.field_slides
     - field.field.node.talk.field_slides_link
     - field.field.node.talk.field_tags
@@ -65,6 +66,7 @@ hidden:
   comment: true
   field_attachments: true
   field_done: true
+  field_message: true
   field_slides: true
   field_slides_link: true
   field_tags: true
