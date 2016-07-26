@@ -28,7 +28,8 @@
         "drupal/viewfield": "dev-8.x-2.x#ccb7042",
         "drupal/views_infinite_scroll": "^8.1",
         "drupal/field_permissions": "8.1.x-dev",
-        "drupal/honeypot": "^8.1"
+        "drupal/honeypot": "^8.1",
+        "drupal/allowed_formats": "^8.1"
     },
     "require-dev": {
         "behat/mink": "~1.7",
