@@ -1,0 +1,22 @@
+/**
+ *
+ */
+
+.comment {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+
+  &.new {
+    border-top: solid 5px yellow;
+  }
+
+  &.by-viewer {}
+}
+
+.comment__permanent-link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
