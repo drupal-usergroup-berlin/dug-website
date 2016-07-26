@@ -1,3 +1,4 @@
+.comments-wrapper,
 .comments-wrapper {
   @include container();
   margin: 0 2rem 4rem 2rem;
@@ -39,7 +40,7 @@
 
 .path-comment {
   .page-content {
-    @include container();
+    // @include container();
     @include clearfix;
     margin: 0 2rem 4rem 2rem;
 
@@ -52,6 +53,13 @@
       @include breakpoint($tablet-l) {
         @include span(5 of 9);
         @include push(2);
+      }
+      @include clearfix;
+    }
+    .comment-form {
+      margin-bottom: 4rem;
+      @include breakpoint($tablet-l) {
+        margin-bottom: 8rem;
       }
     }
   }

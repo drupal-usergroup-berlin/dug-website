@@ -126,12 +126,11 @@
     <p>
       {% trans %}Folgende Leute wollen auch teilnehmen:{% endtrans %}
     </p>
-    {{ event_signups }}
-
   </section>
 
-
-
+  <section class="event__attendees">
+    {{ event_signups }}
+  </section>
 
   <section class="event__description">
     {# if content.field_minutes['#items'] #}
@@ -143,11 +142,7 @@
     {{ content.field_talks }}
   </section>
 
-  <section class="event__attendees">
-    <p class="placeholder">
-      Placeholder: "list of users who flagged this event"
-    </p>
-  </section>
+
 
 </article>
 

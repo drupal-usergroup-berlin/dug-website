@@ -86,12 +86,9 @@
 
   <footer class="comment__meta">
     {% set viewer_id = commented_entity.getOwnerId() %}
-    {# user_picture #}
-    {% if author_id == commented_entity.getOwnerId() %}
-      <p class="comment__submitted">submitted by you</p>
-    {% else %}
-      <p class="comment__submitted">{{ submitted }}</p>
-    {% endif %}
+    {{ user_picture }}
+
+    <p class="comment__submitted">{{ submitted }}</p>
 
 
     {#
