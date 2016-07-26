@@ -1,0 +1,53 @@
+/**
+ * Event: full page
+ *
+ * Structure:
+ *   header
+ *     time.event__date
+ *       span.date-weekday
+ *       span.date-binding
+ *       span.date-day-month
+ *       span.date-year
+ *     h1
+ *     ...
+ */
+
+.talk {
+  @include container;
+  position: relative;
+
+  margin: 0 2rem;
+
+  @include breakpoint($tablet-l) {
+    margin: 0 auto;
+  }
+
+  header {}
+
+  > header {
+    // @include span(9 of 9);
+    margin-bottom: 2rem;
+
+    @include breakpoint($tablet-l) {
+      @include span(5 of 9);
+      @include push(2);
+      // border: solid 1px #DDD;
+    }
+  }
+
+
+}
+
+.talk__description {
+  @include span(9 of 9);
+
+  @include breakpoint($tablet-l) {
+    @include span(5 of 9);
+    @include push(2);
+    // border: solid 1px #DDD;
+
+    p, h1, h2, h3, h4 {
+      max-width: 30em;
+    }
+  }
+}
