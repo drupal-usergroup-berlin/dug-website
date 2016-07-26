@@ -1131,7 +1131,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/allowed_formats-8.x-1.0.zip",
-                "reference": null,
+                "reference": "2d10a4ac8617780751537eb8b9205176b5f4babd",
                 "shasum": null
             },
             "require": {
@@ -1416,12 +1416,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ueberbit/date_combo.git",
-                "reference": "9634d242644ae3ab94e73b4476955a231d5672d0"
+                "reference": "0e2f389c318f067de2685af310955babf4707bb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ueberbit/date_combo/zipball/9634d242644ae3ab94e73b4476955a231d5672d0",
-                "reference": "9634d242644ae3ab94e73b4476955a231d5672d0",
+                "url": "https://api.github.com/repos/ueberbit/date_combo/zipball/0e2f389c318f067de2685af310955babf4707bb6",
+                "reference": "0e2f389c318f067de2685af310955babf4707bb6",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -1430,10 +1430,10 @@
             ],
             "description": "Provides the date_combo module.",
             "support": {
-                "source": "https://github.com/ueberbit/date_combo/tree/end-date",
+                "source": "https://github.com/ueberbit/date_combo/tree/8.x-2.x",
                 "issues": "https://github.com/ueberbit/date_combo/issues"
             },
-            "time": "2016-04-18 09:57:50"
+            "time": "2016-07-26 19:38:02"
         },
         {
             "name": "drupal/entity_reference_revisions",
@@ -1446,7 +1446,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.0-rc7.zip",
-                "reference": null,
+                "reference": "09b19416018f59e1b1f4acef6cfd34496ba991ba",
                 "shasum": null
             },
             "require": {
@@ -1685,7 +1685,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/views_infinite_scroll-8.x-1.2.zip",
-                "reference": null,
+                "reference": "d00719776edfcd16c7b4b02cc4a37395cc635af0",
                 "shasum": null
             },
             "require": {
