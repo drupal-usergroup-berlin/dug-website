@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+#
+# DRUSH WRAPPER
+#
+# A wrapper script which launches the Drush that is in your project's /vendor
+# directory.
+#
+# Docs: https://github.com/drush-ops/drush/blob/master/examples/drush.wrapper
+cd "`dirname $0`"
+./vendor/bin/drush.launcher --root=./web "$@"
