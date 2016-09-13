@@ -4,6 +4,7 @@
  * Remaining tasks:
  * - @todo quickedit button missing for fields.
  */
+use Drupal\user\Entity\User;
 
 
 /**
@@ -72,16 +73,8 @@ function icke_preprocess_user(array &$variables) {
 
   if($variables['elements']['#view_mode'] == 'full') {
 
-    // get the UID of the current user
-    $current_users_id = \Drupal::currentUser()->id();
-    // $current_users_uid = $current_user->id();
-    $variables['current_users_uid'] = $current_users_uid;
-
-    // get user object from a user page
-    $the_uid = \Drupal::routeMatch()->getRawParameter('user');
     // Loading the user
-    $user = $variables['user']; // \Drupal\user\Entity\User::load($the_uid);
-    // $the_uid = intval($the_uid);
+    $user = $variables['user'];
 
     $variables['user_id'] = $user->id();
     $variables['user_firstname'] = $user->get('field_first_name')->value;
@@ -98,7 +91,19 @@ function icke_preprocess_user(array &$variables) {
     $variables['user_skills'] = $user->get('field_skills')->value;
     $variables['user_picture'] = $user->get('user_picture')->value;
 
+    if (\Drupal::currentUser()->isAuthenticated()) {
+      $current_user = User::load(\Drupal::currentUser()->id());
 
+      $variables['current_user'] = [
+        'uid' => $current_user->id(),
+        'user_name' => $current_user->getUsername(),
+        'user_firstname' => $current_user->get('field_first_name')->value,
+        'user_lastname' => $current_user->get('field_last_name')->value,
+        'user_created' => $current_user->get('created')->value,
+        'user_login' => $current_user->get('login')->value,
+        'user_job_status' => $current_user->get('field_job_status')->value,
+      ];
+    }
   }
 
 

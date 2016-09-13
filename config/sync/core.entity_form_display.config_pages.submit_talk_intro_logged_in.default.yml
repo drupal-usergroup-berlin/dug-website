@@ -1,0 +1,26 @@
+uuid: 2fc3f16a-f4c6-4cf3-b5b0-de42388bcdc9
+langcode: de
+status: true
+dependencies:
+  config:
+    - config_pages.type.submit_talk_intro_logged_in
+    - field.field.config_pages.submit_talk_intro_logged_in.field_content
+  module:
+    - paragraphs
+id: config_pages.submit_talk_intro_logged_in.default
+targetEntityType: config_pages
+bundle: submit_talk_intro_logged_in
+mode: default
+content:
+  field_content:
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+hidden:
+  label: true

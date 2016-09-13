@@ -31,27 +31,27 @@
       {# content.field_last_name #}
       {# content.field_job_status #}
 
-      {% if current_users_uid == user_id %}
-        <h1 class="user__greeting">Hi {{ user_firstname }}</h1>
+      {% if current_user and current_user.uid == user_id %}
+        <h1 class="user__greeting">Hi {{ current_user.user_firstname }}</h1>
 
         <section class="user__details">
 
 
           <p>
             {% trans %}
-              Du bist angemeldet als <em>{{ user_name }}</em>
+              Du bist angemeldet als <em>{{ current_user.user_name }}</em>
             {% endtrans %}
           </p>
           <p>
             {% trans %}
-              Du bist Mitglied seit {% endtrans %} <em>{{ user_created | date("d F Y") }}</em>
+              Du bist Mitglied seit {% endtrans %} <em>{{ current_user.user_created | date("d F Y") }}</em>
           </p>
           <p>
             {% trans %}
-              Dein letzter Login war am {% endtrans %} <em>{{ user_login | date("d F Y, H:m") }}</em>
+              Dein letzter Login war am {% endtrans %} <em>{{ current_user.user_login | date("d F Y, H:m") }}</em>
           </p>
           <p>
-            Job-Status: {{ user_job_status }}
+            Job-Status: {{ current_user.user_job_status }}
           </p>
 
         </section>

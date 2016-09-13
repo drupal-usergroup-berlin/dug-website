@@ -34,7 +34,8 @@
         "drupal/honeypot": "^8.1",
         "drupal/allowed_formats": "^8.1",
         "drupal/date_combo": "dev-8.x-2.x",
-        "drupal/config_pages": "8.1.x-dev"
+        "drupal/config_pages": "8.1.x-dev",
+        "drupal/override_node_options": "^8.2"
     },
     "require-dev": {
         "behat/mink": "~1.7",

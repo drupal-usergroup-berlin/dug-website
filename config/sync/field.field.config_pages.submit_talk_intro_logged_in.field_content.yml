@@ -1,0 +1,34 @@
+uuid: beeb45de-3306-41dd-840e-425d59356a8b
+langcode: de
+status: true
+dependencies:
+  config:
+    - config_pages.type.submit_talk_intro_logged_in
+    - field.storage.config_pages.field_content
+  module:
+    - entity_reference_revisions
+id: config_pages.submit_talk_intro_logged_in.field_content
+field_name: field_content
+entity_type: config_pages
+bundle: submit_talk_intro_logged_in
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    target_bundles_drag_drop:
+      section_teaser:
+        weight: 4
+        enabled: false
+      section_text:
+        weight: 5
+        enabled: false
+      section_view:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

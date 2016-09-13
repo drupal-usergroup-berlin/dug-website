@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "267cc70ef04685ac1c388de8c9f31849",
-    "content-hash": "90240bb0f1d0733de7ba438fd054cf84",
+    "hash": "80e487682d912e7947524bf8436a72ea",
+    "content-hash": "e9a732151c4239aafa8a0b9bca2667de",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1475,7 +1475,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.0.zip",
-                "reference": null,
+                "reference": "500d30fe98e8cafd05ff770c9748169acd257aeb",
                 "shasum": null
             },
             "require": {
@@ -1631,6 +1631,44 @@
                 "spam"
             ],
             "time": "2016-02-29 21:34:17"
+        },
+        {
+            "name": "drupal/override_node_options",
+            "version": "8.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/override_node_options",
+                "reference": "9d8f4fb2d8526eb3988c6d50accf26a0ebd96a40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/override_node_options-8.x-2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/node": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Davies",
+                    "email": "oliver@oliverdavies.uk"
+                }
+            ],
+            "description": "Allow non-admins to override the default publishing options for nodes they can edit.",
+            "homepage": "https://www.drupal.org/project/override_node_options",
+            "time": "2016-02-01 01:44:54"
         },
         {
             "name": "drupal/paragraphs",

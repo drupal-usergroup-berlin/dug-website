@@ -2,7 +2,6 @@
 
 namespace Drupal\dug_talks\Controller;
 
-use Drupal\config_pages\Entity\ConfigPages;
 use Drupal\node\Controller\NodeController;
 use Drupal\node\NodeTypeInterface;
 
@@ -24,6 +23,14 @@ class TalkController extends NodeController {
         'form' => $form
       ];
     }
-    return parent::add($node_type);
+
+    $introduction = config_pages_config('submit_talk_intro_logged_in');
+
+    $build = [
+      'introduction' => $introduction ? entity_view($introduction, 'full') : [],
+      'form' => parent::add($node_type)
+    ];
+    $build['form']['actions']['submit']['#value'] = 'Talk einreichen';
+    return $build;
   }
 }
