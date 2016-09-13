@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/user\r\n/user/*"
+    pages: "/user\r\n/user/*\r\n/node/add/talk"
     negate: true
     context_mapping: {  }
