@@ -85,25 +85,49 @@
     <h1>{{ label }}</h1>
     {{ title_suffix }}
 
+    {% if display_submitted %}
+      {{ author_picture }}
+      <div{{ author_attributes.addClass('node__submitted') }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    {% endif %}
+
   </header>
 
-  {#
-  {% if display_submitted %}
-    {{ author_picture }}
-    <div{{ author_attributes.addClass('node__submitted') }}>
-      {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-      {{ metadata }}
-    </div>
-  {% endif %}
-  #}
 
   <section class="talk__description">
-    {{ content|without('comment') }}
+    {# content|without('comment') #}
+    {{ content.body }}
+
+    <section class="talk__meta">
+      {{ content.field_type }}
+      {{ content.field_duration }}
+      {{ content.field_difficulty}}
+    </section>
+
+    <section class="talk__slides">
+      {{ content.field_slides }}
+      {{ content.field_slides_link }}
+    </section>
+
+    <section class="talk__tags">
+      {{ content.field_topics }}
+      {{ content.field_tags }}
+    </section>
+
+    <section class="talk__status">
+      {{ content.field_done }}
+    </section>
+
+    {% if is_admin %}
+      <section class="for-admins-only">
+        {{ content.field_message }}
+      </section>
+    {% endif %}
+
+
   </section>
-
-
-
-
 
 
 </article>

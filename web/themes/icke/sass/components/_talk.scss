@@ -33,6 +33,11 @@
       @include push(2);
       // border: solid 1px #DDD;
     }
+
+    .image-style-thumbnail {
+      height: 50px;
+      width: auto;
+    }
   }
 
 
@@ -50,4 +55,21 @@
       max-width: 30em;
     }
   }
+}
+
+.talk__tags {
+  @include clearfix;
+
+  .field__items {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .field__item {
+    margin-right: 1rem;
+  }
+}
+.for-admins-only {
+  border: solid 2px #CCC;
+  padding: 1rem;
+  margin: 2rem 0;
 }
