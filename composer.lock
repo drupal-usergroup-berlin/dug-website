@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ba630c9c96eee39eb841de1611f150ef",
-    "content-hash": "d20ee1c3b4f6846321b383e8f740b249",
+    "hash": "267cc70ef04685ac1c388de8c9f31849",
+    "content-hash": "90240bb0f1d0733de7ba438fd054cf84",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1154,6 +1154,35 @@
             "time": "2016-04-25 14:07:17"
         },
         {
+            "name": "drupal/config_pages",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/config_pages.git",
+                "reference": "68c3183d6bc7ba88cbdbc01f119ffdcef55160de"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/text": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows the creation of custom configuration entities.",
+            "homepage": "http://drupal.org/project/config_pages",
+            "keywords": [
+                "Drupal"
+            ],
+            "time": "2016-08-20 21:07:41"
+        },
+        {
             "name": "drupal/console",
             "version": "1.0.0-beta4",
             "source": {
@@ -1437,16 +1466,16 @@
         },
         {
             "name": "drupal/entity_reference_revisions",
-            "version": "8.1.0-rc7",
+            "version": "8.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_reference_revisions.git",
-                "reference": "09b19416018f59e1b1f4acef6cfd34496ba991ba"
+                "reference": "500d30fe98e8cafd05ff770c9748169acd257aeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.0-rc7.zip",
-                "reference": "09b19416018f59e1b1f4acef6cfd34496ba991ba",
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.0.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1464,7 +1493,7 @@
             ],
             "description": "Adds a Entity Reference field type with revision support.",
             "homepage": "https://www.drupal.org/project/entity_reference_revisions",
-            "time": "2016-05-26 00:06:06"
+            "time": "2016-07-21 15:50:27"
         },
         {
             "name": "drupal/field_group",
@@ -1609,7 +1638,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/paragraphs",
-                "reference": "020df39"
+                "reference": "e52c846c160202144eb00dbfb6d45a135247f92d"
             },
             "require": {
                 "drupal/core": "8.*",
@@ -1630,15 +1659,13 @@
                 "drupal/node": "Required by drupal/paragraphs_demo",
                 "drupal/search_api": "Required by drupal/paragraphs_demo",
                 "drupal/search_api_db": "Required by drupal/paragraphs_demo",
+                "drupal/taxonomy": "Required by drupal/paragraphs_demo",
                 "drupal/views": "Required by drupal/paragraphs_demo"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
-                },
-                "patches_applied": {
-                    "2556539-24": "https://www.drupal.org/files/issues/required_paragraphs_field_unable_to_edit-2556539-24.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -1647,7 +1674,7 @@
             ],
             "description": "Enables the creation of paragraphs entities. To safely uninstall, go first to Structure > Paragraphs types > Settings.",
             "homepage": "https://www.drupal.org/project/paragraphs",
-            "time": "2016-04-17 06:58:02"
+            "time": "2016-09-07 15:52:14"
         },
         {
             "name": "drupal/viewfield",
@@ -6080,7 +6107,8 @@
         "drupal/paragraphs": 20,
         "drupal/viewfield": 20,
         "drupal/field_permissions": 20,
-        "drupal/date_combo": 20
+        "drupal/date_combo": 20,
+        "drupal/config_pages": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

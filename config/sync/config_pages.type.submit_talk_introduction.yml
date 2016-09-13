@@ -1,0 +1,12 @@
+uuid: e0e56600-1103-4c11-909f-a4911b00d7fc
+langcode: de
+status: true
+dependencies: {  }
+id: submit_talk_introduction
+label: submit_talk_introduction
+context:
+  show_warning: 1
+  group:
+    language: 0
+menu:
+  path: ''

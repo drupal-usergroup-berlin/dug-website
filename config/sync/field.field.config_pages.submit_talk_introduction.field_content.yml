@@ -1,0 +1,40 @@
+uuid: c9d405ff-1957-4b5c-ade7-e64c915a949c
+langcode: de
+status: true
+dependencies:
+  config:
+    - config_pages.type.submit_talk_introduction
+    - field.storage.config_pages.field_content
+    - paragraphs.paragraphs_type.section_teaser
+    - paragraphs.paragraphs_type.section_text
+    - paragraphs.paragraphs_type.section_view
+  module:
+    - entity_reference_revisions
+id: config_pages.submit_talk_introduction.field_content
+field_name: field_content
+entity_type: config_pages
+bundle: submit_talk_introduction
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      section_teaser: section_teaser
+      section_text: section_text
+      section_view: section_view
+    target_bundles_drag_drop:
+      section_teaser:
+        weight: 4
+        enabled: false
+      section_text:
+        weight: 5
+        enabled: false
+      section_view:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

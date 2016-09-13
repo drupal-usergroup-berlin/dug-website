@@ -1,0 +1,23 @@
+uuid: 0592f50e-316a-404b-98a6-3d2fab9f1c08
+langcode: de
+status: true
+dependencies:
+  config:
+    - config_pages.type.submit_talk_introduction
+    - field.field.config_pages.submit_talk_introduction.field_content
+  module:
+    - entity_reference_revisions
+id: config_pages.submit_talk_introduction.default
+targetEntityType: config_pages
+bundle: submit_talk_introduction
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden: {  }

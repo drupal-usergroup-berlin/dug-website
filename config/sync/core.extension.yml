@@ -9,6 +9,7 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_pages: 0
   contact: 0
   contextual: 0
   date_combo: 0
@@ -16,6 +17,7 @@ module:
   dblog: 0
   dug_admin: 0
   dug_migrate: 0
+  dug_talks: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0

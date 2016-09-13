@@ -27,13 +27,14 @@
         "drupal/address": "8.1.x-dev",
         "drupal/field_group": "8.1.x-dev",
         "drupal/flag": "8.4.x-dev",
-        "drupal/paragraphs": "dev-8.x-1.x#020df39",
+        "drupal/paragraphs": "8.1.x-dev",
         "drupal/viewfield": "dev-8.x-2.x#ccb7042",
         "drupal/views_infinite_scroll": "^8.1",
         "drupal/field_permissions": "8.1.x-dev",
         "drupal/honeypot": "^8.1",
         "drupal/allowed_formats": "^8.1",
-        "drupal/date_combo": "dev-8.x-2.x"
+        "drupal/date_combo": "dev-8.x-2.x",
+        "drupal/config_pages": "8.1.x-dev"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -78,9 +79,6 @@
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "patches": {
-            "drupal/paragraphs": {
-                "2556539-24": "https://www.drupal.org/files/issues/required_paragraphs_field_unable_to_edit-2556539-24.patch"
-            },
             "drupal/drupal": {
                 "local-0": "patches/drupal/views-row-fix-wrong-arguments--see-2457999.patch"
             }

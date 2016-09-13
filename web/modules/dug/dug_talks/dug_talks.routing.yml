@@ -1,0 +1,8 @@
+dug_talks.talk_controller_index:
+  path: '/node/add/talk'
+  defaults:
+    _controller: '\Drupal\dug_talks\Controller\TalkController::add'
+    _title_callback: '\Drupal\dug_talks\Controller\TalkController::addPageTitle'
+    node_type: talk
+  requirements:
+    _access: 'TRUE'
