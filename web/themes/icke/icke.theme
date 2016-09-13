@@ -30,8 +30,10 @@ function icke_preprocess_node(array &$variables) {
   $type = $node->getType();
 
   if ($type == 'event') {
-    $variables['event_date'] = $node->get('field_date')->value;
-    $variables['event_timestamp'] = $node->get('field_date')->date->format('U');
+    if (!$node->get('field_date')->isEmpty()) {
+      $variables['event_date'] = $node->get('field_date')->value;
+      $variables['event_timestamp'] = $node->get('field_date')->date->format('U');
+    }
     $variables['event_signups'] = [
       '#type' => 'view',
       '#name' => 'event_signups',

@@ -81,18 +81,22 @@
 <article{{ attributes.addClass(classes) }}>
 
   <header>
+    {% if event_timestamp %}
     <time datetime="{{ event_date }}" class="event__date">
       <span class="date-weekday">{{ event_timestamp|format_date("custom", "D") }}</span><span class="date-binding">, </span><span class="date-day-month">{{ event_timestamp|format_date("custom", "j.n.") }}</span><span class="date-year">{{ event_timestamp|format_date("custom", "Y") }}</span>
     </time>
+    {% endif %}
     {{ title_prefix }}
     <h1>{{ label }}</h1>
     {{ title_suffix }}
 
 
     {{ content.field_location }}
+    {% if event_timestamp %}
     <p class="event__time">
       Start: {{ event_timestamp|format_date("custom", "H:i") }}
     </p>
+    {% endif %}
 
 
 
