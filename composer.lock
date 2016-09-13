@@ -1445,12 +1445,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ueberbit/date_combo.git",
-                "reference": "0e2f389c318f067de2685af310955babf4707bb6"
+                "reference": "517eb50186d9b937f1fc16f7856355727577369a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ueberbit/date_combo/zipball/0e2f389c318f067de2685af310955babf4707bb6",
-                "reference": "0e2f389c318f067de2685af310955babf4707bb6",
+                "url": "https://api.github.com/repos/ueberbit/date_combo/zipball/517eb50186d9b937f1fc16f7856355727577369a",
+                "reference": "517eb50186d9b937f1fc16f7856355727577369a",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -1462,7 +1462,7 @@
                 "source": "https://github.com/ueberbit/date_combo/tree/8.x-2.x",
                 "issues": "https://github.com/ueberbit/date_combo/issues"
             },
-            "time": "2016-07-26 19:38:02"
+            "time": "2016-09-13 20:34:14"
         },
         {
             "name": "drupal/entity_reference_revisions",
@@ -1643,7 +1643,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/override_node_options-8.x-2.0.zip",
-                "reference": null,
+                "reference": "9d8f4fb2d8526eb3988c6d50accf26a0ebd96a40",
                 "shasum": null
             },
             "require": {
