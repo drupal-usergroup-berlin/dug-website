@@ -1,0 +1,70 @@
+// Styles for /node/add/talk
+
+.talk-add-introduction {
+  // @include container();
+  margin-bottom: 3rem;
+
+  .section-style--orange {
+
+  }
+
+  section {
+    @include container();
+
+    // @include breakpoint ($tablet-l) {
+    //   @include span(9 of 9);
+    //   @include push(0);
+    // }
+  }
+}
+
+
+
+.node-talk-form,
+.form-talk-add {
+  @include container;
+  position: relative;
+  margin: 0 2rem 4rem 2rem;
+
+  @include breakpoint($tablet-l) {
+    margin: 0 auto 8rem auto;
+  }
+}
+
+.form-talk-add__container {
+  color: $font-color-medium;
+
+  width: 100%;
+  padding: 0 2rem 4rem 2rem;
+
+  background: #FFF;
+  // border: solid 2px $border-color-light;
+
+  @include breakpoint($tablet-l) {
+    @include span(7 of 9);
+    @include push(1);
+  }
+}
+
+#field-slides-link-add-more-wrapper {
+  margin-bottom: 4rem;
+}
+
+.field-add-more-submit {
+  background-color: white;
+  border-color: $link-color;
+  color: $link-color;
+  padding: 0.5rem 1rem;
+}
+
+.form-talk-add__actions {
+  text-align: center;
+  input[type=submit] {
+    padding: 1rem 3rem;
+  }
+}
+
+input[type=url],
+input[type=text] {
+  max-width: 100%;
+}

@@ -1,0 +1,17 @@
+// Teaser for /node/add/talk
+
+.talk-add-hint {
+  @include container();
+
+
+}
+
+.talk-add-hint__content {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  @include breakpoint ($tablet-l) {
+    @include span(5 of 9);
+    @include push(2);
+  }
+}

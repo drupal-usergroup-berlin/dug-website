@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+
+{%
+  set classes = [
+    'form-talk-add',
+  ]
+%}
+
+<form{{ attributes.addClass(classes) }}>
+  {# children #}
+
+  <div class="form-talk-add__container">
+
+    <h1 class="form-title">{{ trans }}Submit a talk{{ endtrans }}</h1>
+
+    {% for key, child in element if key|first != '#' %}
+
+      {% if (child['#markup'] != "") %}
+        {% set elementClass = key|clean_class %}
+        <p class="{{ 'form-talk-add__' ~ elementClass }}">{{ child }}</p>
+      {% endif %}
+
+    {% endfor %}
+  </div>
+
+</form>
