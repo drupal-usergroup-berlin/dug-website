@@ -1,25 +1,5 @@
 // Styles for /node/add/talk
 
-.talk-add-introduction {
-  // @include container();
-  margin-bottom: 3rem;
-
-  .section-style--orange {
-
-  }
-
-  section {
-    @include container();
-
-    // @include breakpoint ($tablet-l) {
-    //   @include span(9 of 9);
-    //   @include push(0);
-    // }
-  }
-}
-
-
-
 .node-talk-form,
 .form-talk-add {
   @include container;

@@ -1,0 +1,22 @@
+// Intro block for /node/talk/add
+
+.talk-add-introduction {
+  margin-bottom: 3rem;
+
+  .section-type--text {
+    section {
+      @include container();
+
+      .section-title,
+      .section-content {
+        @include breakpoint($tablet-l) {
+          @include span(7 of 9);
+          @include push(1);
+        }
+      }
+
+    }
+  }
+
+
+}
