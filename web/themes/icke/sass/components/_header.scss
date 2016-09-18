@@ -85,6 +85,9 @@ nav.menu--main {
       padding: 1rem;
     }
   }
+  a.is-active {
+    color: $neo-green;
+  }
 }
 
 nav.menu--account {
