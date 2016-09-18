@@ -4,14 +4,31 @@ set classes = [
 'node--event'
 ]
 %}
+
+{%
+set title_classes = [
+  'event__title',
+]
+%}
 <article{{ attributes.addClass(classes) }}>
 
-  <h3{{ title_attributes }}>
-    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-  </h3>
+  <a href="{{ url }}" rel="bookmark">
+    <header>
+    {% if event_timestamp %}
+      <time datetime="{{ event_date }}" class="event__date">
+        <span class="date-weekday">{{ event_timestamp|format_date("custom", "D") }}</span><span class="date-binding">, </span><span class="date-day-month">{{ event_timestamp|format_date("custom", "j.n.") }}</span><span class="date-year">{{ event_timestamp|format_date("custom", "Y") }}</span>
+      </time>
+    {% endif %}
 
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
-  </div>
+    <h3{{ title_attributes.addClass(title_classes) }}>
+      {{ label }}
+    </h3>
+
+    </header>
+  </a>
+
+    <div{{ content_attributes.addClass('node__content') }}>
+      {{ content }}
+    </div>
 
 </article>

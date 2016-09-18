@@ -1,0 +1,36 @@
+// Teaser view mode of event_timestamp
+
+.node--event--teaser {
+
+  .event__date {
+    color: black !important;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    // &::before {
+    //   @include date-badge(100%);
+    // }
+    //
+    // @include breakpoint($tablet-l) {
+    //   position: absolute;
+    //   margin-left: -15rem;
+    //   margin-top: 0;
+    // }
+  }
+
+  .date-weekday {}
+  .date-binding {}
+  .date-day-month {}
+  .date-year {}
+
+  .date-weekday,
+  .date-binding,
+  .date-day-month,
+  .date-year {
+
+  }
+
+  .event__title {
+    margin: 0;
+  }
+}

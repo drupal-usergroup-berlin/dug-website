@@ -35,66 +35,7 @@
     }
   }
 
-  .event__date {
 
-    position: relative;
-    display: block;
-    width: 3.5em;
-    text-align: center;
-    padding-top: .6em;
-    font-size: 1.7em;
-    margin: 2rem auto 2rem auto;
-
-    @include breakpoint($tablet-l) {
-      position: absolute;
-      margin-left: -15rem;
-      margin-top: 1rem;
-      // margin-bottom: 0;
-    }
-
-    // Star shape.
-    // @todo Replace clip path with actual star shape.
-    &::before {
-      $size: 120%;
-      content: "";
-      top: (100% - $size) / 2;
-      left: (100% - $size) / 2;
-      position: absolute;
-      width: $size;
-      height: 0;
-      padding-bottom: $size;
-      opacity: .9;
-      background: transparent url("../images/event-badge.svg") center no-repeat;
-      background-size: contain;
-    }
-
-    .date-weekday,
-    .date-day-month,
-    .date-year {
-      display: block;
-      position: relative;
-      z-index: 1;
-      line-height: 1em;
-      white-space: nowrap;
-    }
-
-    .date-weekday {
-      text-transform: uppercase;
-      font-size: .9em;
-    }
-    .date-binding {
-      display: none;
-    }
-    .date-day-month {
-      font-weight: bold;
-      font-size: 1em;
-      text-indent: .2em;
-    }
-    .date-year {
-      font-size: .6em;
-    }
-
-  }
 
   .address {
     margin-bottom: 1rem;
@@ -161,5 +102,76 @@
       @include span(2 of 9 last);
       // border: solid 1px #DDD;
     }
+  }
+}
+
+
+@mixin date-badge($size) {
+  // $size: 120%;
+  content: "";
+  top: (100% - $size) / 2;
+  left: (100% - $size) / 2;
+  position: absolute;
+  width: $size;
+  height: 0;
+  padding-bottom: $size;
+  opacity: .9;
+  background: transparent url("../images/event-badge.svg") center no-repeat;
+  background-size: contain;
+}
+
+.dug-event {
+
+  .event__date {
+
+    position: relative;
+    display: block;
+    width: 3.5em;
+    text-align: center;
+    padding-top: .6em;
+    font-size: 1.7em;
+    margin: 2rem auto 2rem auto;
+
+    @include breakpoint($tablet-l) {
+      position: absolute;
+      margin-left: -15rem;
+      margin-top: 1rem;
+      // margin-bottom: 0;
+    }
+
+    // Star shape.
+    // @todo Replace clip path with actual star shape.
+    &::before {
+
+      @include date-badge(120%);
+
+    }
+
+    .date-weekday,
+    .date-day-month,
+    .date-year {
+      display: block;
+      position: relative;
+      z-index: 1;
+      line-height: 1em;
+      white-space: nowrap;
+    }
+
+    .date-weekday {
+      text-transform: uppercase;
+      font-size: .9em;
+    }
+    .date-binding {
+      display: none;
+    }
+    .date-day-month {
+      font-weight: bold;
+      font-size: 1em;
+      text-indent: .2em;
+    }
+    .date-year {
+      font-size: .6em;
+    }
+
   }
 }
